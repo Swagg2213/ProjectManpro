@@ -28,18 +28,24 @@
                     <li><a href="/informasi">Informasi</a></li>
                     <li><a href="/renungan">Renungan</a></li>
                     <li><a href="/diakonia">Diakonia</a></li>
+                    <li><a href="/login">Login</a></li>
                 </ul>
             </div>
             <img src="/logo.png" alt="" class="w-16 ml-3 md:w-20 md:ml-20">
         </div>
+        <header class="sticky top-0 z-50 bg-navy">
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a href="/">Home</a></li>
                 <li><a href="/informasi">Informasi</a></li>
                 <li><a href="/renungan">Renungan</a></li>
                 <li><a href="/diakonia">Diakonia</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
         </div>
+        </header>
+
+    
         <div class="navbar-end">
             <label class="flex cursor-pointer gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
