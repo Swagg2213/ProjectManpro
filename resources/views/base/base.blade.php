@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEREJA MANPRO</title>
+    <title>GPPS Mahanaim Surabaya</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="navbar bg-base-100 md:pt-5">
+    <div class="navbar bg-red-900 shadow md:pt-5">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -33,18 +33,15 @@
             </div>
             <img src="/logo.png" alt="" class="w-16 ml-3 md:w-20 md:ml-20">
         </div>
-        <header class="sticky top-0 z-50 bg-navy">
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="/">Home</a></li>
-                <li><a href="/informasi">Informasi</a></li>
-                <li><a href="/renungan">Renungan</a></li>
-                <li><a href="/diakonia">Diakonia</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul>
-        </div>
-        </header>
-
+            <div class="navbar-center hidden lg:flex text-lg text-white">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/informasi">Informasi</a></li>
+                    <li><a href="/renungan">Renungan</a></li>
+                    <li><a href="/diakonia">Diakonia</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </div>
     
         <div class="navbar-end">
             <label class="flex cursor-pointer gap-2">
@@ -66,8 +63,6 @@
     <div class="">
       @yield('content')
     </div>
-
- 
 
     <script>
         // Mendapatkan elemen root <html>
