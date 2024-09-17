@@ -3,12 +3,12 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('includes.home');
+    return view('includes.dashboard');
 });
 
-// Route::get('/test', function () {
-//     return view('app');
-// });
+Route::get('/login', function () {
+    return view('includes.login');
+});
 
 Route::get('/informasi', function () {
     return view('includes.informasi');
