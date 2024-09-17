@@ -7,8 +7,8 @@
 
     <div class="container my-4 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white mt-5 text-base font-large tracking-tight">Layanan Kematian</h1>
-            <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Layanan Kematiann</h3>
+            <h1 class="text-slate-900 dark:text-white mt-5 text-base font-large tracking-tight">Layanan Penghiburan</h1>
+            <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Layanan Penghiburan</h3>
         
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
                 intinya buat org klo mau mati ygy 
