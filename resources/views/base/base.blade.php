@@ -12,7 +12,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="navbar bg-red-900 shadow md:pt-5">
+    <div class="navbar bg-red-900 shadow-lg md:py-3">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -31,19 +31,19 @@
                     <li><a href="/login">Login</a></li>
                 </ul>
             </div>
-            <img src="/logo.png" alt="" class="w-16 ml-3 md:w-20 md:ml-20">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHauxvjjiHK7rw5dudnadlQM2uUFZrus-WfQ&s" alt="" class="w-16 ml-3 md:w-20 md:ml-10">
         </div>
-            <div class="navbar-center hidden lg:flex text-lg text-white">
+            <div class="navbar-center hidden lg:flex text-lg text-white font-semibold">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/informasi">Informasi</a></li>
-                    <li><a href="/renungan">Renungan</a></li>
-                    <li><a href="/diakonia">Diakonia</a></li>
-                    <li><a href="/login">Login</a></li>
+                    <li><a href="/" class="rounded-md hover:bg-red-950">Home</a></li>
+                    <li><a href="/informasi" class="rounded-md hover:bg-red-950">Informasi</a></li>
+                    <li><a href="/renungan" class="rounded-md hover:bg-red-950">Renungan</a></li>
+                    <li><a href="/diakonia" class="rounded-md hover:bg-red-950">Diakonia</a></li>
+                    <li><a href="/login" class="rounded-md hover:bg-red-950">Login</a></li>
                 </ul>
             </div>
     
-        <div class="navbar-end">
+        <div class="navbar-end md:mr-10">
             <label class="flex cursor-pointer gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
