@@ -3,8 +3,11 @@
 @section('content')
 
     <div class="container m-auto space-y-1">
-        <img src="images/wall.jpg" width="300" height="200">
-        <h1 class="text-center font-bold mt-10 text-6xl">GPPS MAHANAIM</h1>
+        <div class = "w-full h-1/2">
+            <img src="{{URL::asset('/images/1.jpg')}}">
+        </div>
+        
+        <br><br><h1 class="text-center font-bold mt-10 text-6xl">GPPS MAHANAIM</h1>
         <h2 class="text-center mt-10 text-xl py-0">Gereja Pantekosta Pusat Surabaya</h2>
     </div>
 

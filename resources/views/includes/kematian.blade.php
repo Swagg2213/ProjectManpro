@@ -3,8 +3,9 @@
 @section('content')
 
 <div class="container m-auto">
-<h1 class="text-center font-bold mt-10 text-4xl">Layanan Kematian</h1>
-  </div>
+  <h1 class="text-center font-bold mt-10 text-4xl">Layanan Penghiburan</h1>
+</div>
+<div>
   <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-10">
     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
@@ -14,19 +15,25 @@
         </div>
       </div>
       <div>
-        <label for="lahir" class="block text-sm font-semibold leading-6 text-gray-900">Tanggal Kematian</label>
+        <label for="lahir" class="block text-sm font-semibold leading-6 text-gray-900">Tanggal Meninggal Dunia</label>
         <div class="mt-2.5">
           <input type="text" name="lahir" id="lahir" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
       <div class="sm:col-span-2">
-        <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Tempat Persemayaman</label>
+        <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">No Telepon Keluarga / Wali</label>
         <div class="mt-2.5">
-        <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
         <div class="sm:col-span-2">
-        <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">No Telepon Keluarga</label>
-          <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Permintaan Pemimpin Ibadah (Pdt)</label>
+        <div class="mt-2.5">
+          <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      <div class="sm:col-span-2">
+        <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Keterangan Tambahan</label>
+        <div class="mt-2.5">
+          <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
       </div>
