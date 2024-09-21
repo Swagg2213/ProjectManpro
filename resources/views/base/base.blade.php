@@ -12,7 +12,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="navbar bg-red-900 shadow-lg md:py-3">
+    <div class="navbar bg-red-900 shadow-lg md:py-3 sticky top-0 z-50">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
