@@ -26,6 +26,27 @@
       <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Shalom Aleichem</h2>
     </div>
     <div class="mt-20">
+      @if (session()->has("success"))
+      <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-green-500">
+        <span class="inline-block align-middle mr-8">
+          <b class="capitalize">{{ session('success') }}</b>
+        </span>
+        <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" onclick="closeAlert(event)">
+          <span>×</span>
+      
+        </button>
+      </div>
+      <script>
+        function closeAlert(event){
+          let element = event.target;
+          while(element.nodeName !== "BUTTON"){
+            element = element.parentNode;
+          }
+          element.parentNode.parentNode.removeChild(element.parentNode);
+        }
+      </script>
+      @endif
+
     @if (session()->has('loginError'))
     <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-red-500">
       <span class="inline-block align-middle mr-8">
@@ -52,7 +73,7 @@
       <form class="space-y-6" action="{{ route('login.post') }}" method="POST">
         @csrf
         <div>
-            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Username</label>
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900 is-invalid">Username</label>
              <div class="mt-2">
             <input id="username" name="username" placeholder="Username"  autocomplete="username" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pl-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
@@ -73,6 +94,7 @@
         <div>
           <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
         </div>
+        <a href="/registrasi">add admin</a>
       </form>
     </div>
   </div>
