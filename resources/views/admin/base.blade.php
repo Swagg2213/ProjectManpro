@@ -8,11 +8,12 @@
     <title>GPPS Mahanaim Surabaya</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    {{-- @vite('resources/css/app.css') --}}
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="navbar bg-red-900 shadow md:pt-5">
+    <div class="navbar bg-red-900 shadow md:pt-5 sticky top-0 z-50">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -25,7 +26,7 @@
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/informasi">Informasi</a></li>
+                    <li><a href="/dataJemaat">Data Jemaat</a></li>
                     <li><a href="/renungan">Renungan</a></li>
                     <li><a href="/diakonia">Diakonia</a></li>
                     <li><a href="/login">Login</a></li>
@@ -37,6 +38,7 @@
             <div class="navbar-center hidden lg:flex text-lg text-white">
                 <ul class="menu menu-horizontal px-1">
                     <li><a href="/">Home</a></li>
+                    <li><a href="/jemaat">Data Jemaat</a></li>
                     <li><a href="/informasi">Informasi</a></li>
                     <li><a href="/renungan">Renungan</a></li>
                     <li><a href="/diakonia">Diakonia</a></li>

@@ -4,6 +4,10 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
+        "./pages/**/*.{html,js}",
+        "./components/**/*.{html,js}",
+        "./src/**/*.{html,js}",
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
     ],
     theme: {
         extend: {},

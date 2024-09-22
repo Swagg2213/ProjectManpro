@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Jemaat;
+use App\Http\Controllers\JemaatController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -36,11 +39,13 @@ Route::get('/login',[AuthController::class,'login'])
 Route::post('/login',[AuthController::class,"loginPost"])
 ->name("login.post");
 
-Route::get('/registrasi',[AuthController::class,'register'])
+Route::get('/registrasi',[RegisterController::class,'register'])
 ->name("registrasi");
-Route::post('/registrasi', [AuthController::class,"regisPost"])
+Route::post('/registrasi', [RegisterController::class,"regisPost"])
 ->name('reg.post');
 
+Route::get('/jemaat',[JemaatController::class,'index']);
+Route::get('/jemaat',[JemaatController::class,'show'])->name("show.data");
 
 Route::middleware("auth")->group(function(){
     Route::view("/admin","admin.index")->name("index");
