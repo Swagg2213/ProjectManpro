@@ -3,6 +3,40 @@
 @section('content')
 
 <div class="container m-auto">
-        <h1 class="text-center font-bold mt-10 text-4xl">RENUNGAN</h1>
+    <h1 class="text-center font-bold mt-10 text-4xl">RENUNGAN</h1>
+</div>
+
+<div class="container mx-12 rounded-md px-0.5 py-4" style="width: 16rem; mx-12 grid grid-cols-1 gap-12 md:grid-cols-3 flex-shrink: 1 text-center">
+    <div class="bg-white dark:bg-yellow-200 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-80">
+        <div class = "max w-full h-auto">
+            <img src="{{URL::asset('/images/ibadah1.jpeg')}}">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">12 Juni 2024</h5>
+            <p class="text-center">
+                Setiap hari adalah kesempatan baru untuk merenungkan kebaikan dan penyertaan Tuhan. Mari temukan pengharapan dan kekuatan dalam firman-Nya yang menguatkan.
+            </p>
+            <button>
+                <br>
+                <a href="/ren1" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Klik untuk membaca!</a>
+            </button>
+        </div>
+
+        <div class = "max w-full h-auto">
+            <img src="{{URL::asset('/images/ibadah1.jpeg')}}">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">12 Juni 2024</h5>
+            <p class="text-center">
+                Setiap hari adalah kesempatan baru untuk merenungkan kebaikan dan penyertaan Tuhan. Mari temukan pengharapan dan kekuatan dalam firman-Nya yang menguatkan.
+            </p>
+            <button>
+                <br>
+                <a href="/ren1" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Klik untuk membaca!</a>
+            </button>
+        </div>
     </div>
+</div>
 @endsection 

@@ -36,6 +36,15 @@
       cursor: pointer;
       text-align: center;
     }
+    
+    .cancel-btn {
+      padding: 10px 20px;
+      background-color: #ff000f;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
 </style>
 
   <div class="container m-auto">
@@ -78,9 +87,12 @@
       </div>
 
       <!-- submit button -->
-      <div class="mt-4 flex items-center justify-center">
+      <div class="mt-4 flex items-center justify-center d-grid gap-8">
         <!-- Show alert after press the button -->
-        <button class="submit-btn" onclick="showAlert()">Submit</button>
+        <button class="submit-btn" onclick="showAlert()">Kirim</button>
+        <button class="cancel-btn">
+          <a href="/diakonia">Batal</a>
+        </button>
       </div>
 
       <!-- alert box -->
