@@ -4,28 +4,28 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('includes.dashboard');
+    return view('dashboard');
 });
 
 
 Route::get('/informasi', function () {
-    return view('includes.informasi');
+    return view('informasi');
 });
 
 Route::get('/renungan', function () {
-    return view('includes.renungan');
+    return view('renungan');
 });
 
 Route::get('/diakonia', function () {
-    return view('includes.diakonia');
+    return view('diakonia');
 });
 
 Route::get('/pernikahan', function () {
-    return view('includes.pernikahan');
+    return view('pernikahan');
 });
 
 Route::get('/kematian', function () {
-    return view('includes.kematian');
+    return view('kematian');
 });
 
 
