@@ -12,7 +12,7 @@
 
     <body>
         <!-- navbar -->
-        <div class="navbar bg-red-900 shadow-lg md:py-3 sticky top-0 z-50">
+        <div class="navbar bg-red-900 shadow-lg md:py-3 sticky top-0">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -90,10 +90,12 @@
         </script>
     </body>
 
+    <br><br>
     <footer>
-        <div class="container m-auto space-y-1">
-            <p>hello</p>
+        <div class="bg-blue-900 shadow-lg md:py-3">
+            <p class="text-white font-sm text-center">
+                GPPS Mahanaim ~ (031) 567-8900 / info@gppmahanaim.org
+            </p>
         </div>
     </footer>
 </html>
-

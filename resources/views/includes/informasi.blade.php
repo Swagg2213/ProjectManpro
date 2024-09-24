@@ -2,56 +2,98 @@
 
 @section('content')
 
-    <div class="container my-4 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
+    <div class="container px-12 my-8 mx-auto grid grid-cols-1 gap-6">
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white mt-5 text-base font-large tracking-tight">Kebaktian Umum</h1>
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
             <hr>
 
-            <img src="/gereja.png" alt="FOTO GEREJA TP PEMANIS DOANG PLS">
-
-            <!-- AKU BINGUNG MAU TARUH ALAMAT GREJA DIMANA PLS HELP -->
-
-            <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
-                Sabtu, 12 September 2025 <br>
-                18.00-19.00
-            </h3>
-            <h3>Tema : Tuhan Itu Baik</h3>
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                Pembicara : Pdt ... <br>
-                inti firmannya ygy
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum repellendus inventore sit rerum quisquam blanditiis quaerat sed id? Fuga, officiis.
-            </p>
-        
-            <div class="mt-10 flex items-center justify-center">
-                <a href="/" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">selengkapnya
-                </a>
+            <div class = "max w-full h-auto px-6">
+                <br><img src="{{URL::asset('/images/ibadah1.jpeg')}}">
             </div>
+            
+            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
+                Minggu, 12 September 2025 <br>
+                09.00-11.00
+            </h3><br>
+
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+                Tema : Kasih yang Tak Pernah Gagal <br>
+                Pembicara : Pdt. Yohanes Manurung <br><br>
+                Kasih Tuhan mengalir tanpa henti dalam kehidupan kita. Saat kita merasa lelah dan tak berdaya, kasih-Nya selalu ada, membawa kekuatan baru. Mari datang dan temukan cinta yang tak pernah gagal ini, yang mampu mengubah setiap hati yang terbuka.
+            </p>
         </div>
 
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white mt-5 text-base font-large tracking-tight">Persekutuan Doa</h1>
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN PEMUDA</h1>
             <hr>
 
-            <img src="/gereja.png" alt="FOTO GEREJA TP PEMANIS DOANG PLS">
-
-            <!-- AKU BINGUNG MAU TARUH ALAMAT GREJA DIMANA PLS HELP -->
-
-            <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
-                Sabtu, 12 September 2025 <br>
-                18.00-19.00
-            </h3>
-            <h3>Tema : Tuhan Jawaban Masalahku</h3>
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                Pembicara : Pdt ... <br>
-                inti firmannya ygy
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum repellendus inventore sit rerum quisquam blanditiis quaerat sed id? Fuga, officiis.
-            </p>
-        
-        
-            <div class="mt-10 flex items-center justify-center">
-                <a href="/pernikahan" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">selengkapnya
-                </a>
+            <div class = "max w-full h-auto px-6">
+                <br><img src="{{URL::asset('/images/ibadah2.jpeg')}}">
             </div>
+            
+            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
+                Sabtu, 1 Oktober 2025 <br>
+                18.00-19.30
+            </h3><br>
+
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+                Tema : Jodoh Bukan di Tangan Tuhan?! <br>
+                Pembicara : Pdt. Erick Sudharma <br><br>
+                Sering kali kita mendengar bahwa jodoh di tangan Tuhan, namun benarkah demikian? Dalam khotbah ini, kita akan belajar bahwa Tuhan memberikan kita kebebasan untuk memilih, termasuk dalam soal pasangan hidup. Kuncinya bukan menunggu tanpa usaha, tetapi mencari dengan hikmat, sambil mempercayai Tuhan untuk membimbing hati dan langkah kita. Jodoh adalah tentang pilihan, persiapan, dan tanggung jawab, bukan sekadar takdir.        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
+            <hr>
+
+            <div class = "max w-full h-auto px-6">
+                <br><img src="{{URL::asset('/images/ibadah3.jpeg')}}">
+            </div>
+            
+            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
+                Minggu, 20 Oktober 2025 <br>
+                09.00-11.00
+            </h3><br>
+
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+                Tema : Bersinar di Tengah Kegelapan <br>
+                Pembicara : Pdt. Jessica Wijaya <br><br>
+                Tuhan memanggil kita untuk menjadi terang di dunia yang sering kali gelap dan penuh kekhawatiran. Melalui khotbah ini, kita akan diberi inspirasi untuk menjadi saksi yang berani, memancarkan terang Kristus di setiap tempat dan situasi.        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">IBADAH GABUNGAN PGMW-3</h1>
+            <hr>
+
+            <div class = "max w-full h-auto px-6">
+                <br><img src="{{URL::asset('/images/ibadah4.jpeg')}}">
+            </div>
+            
+            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
+                Jumat, 25 Oktober 2025 <br>
+                18.00-19.30
+            </h3><br>
+
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+                Tema : Hidup Berbuah Dalam Roh <br>
+                Pembicara : Pdt. Yohanes Manurung <br><br>
+                Apa yang terlihat dalam hidup orang yang dipenuhi Roh Kudus? Kita akan mengeksplorasi buah-buah Roh yang nyata dalam keseharian, bagaimana Tuhan bekerja dalam kita untuk menghasilkan karakter yang memuliakan-Nya.        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
+            <hr>
+
+            <div class = "max w-full h-auto px-6">
+                <br><img src="{{URL::asset('/images/church2.jpeg')}}">
+            </div>
+            
+            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
+                Minggu, 27 Oktober 2025 <br>
+                09.00-11.00
+            </h3><br>
+
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+                Tema : Pengampunan yang Membebaskan <br>
+                Pembicara : Pdm. Ribka Mentari <br><br>
+                Pengampunan adalah kunci untuk bebas dari belenggu masa lalu. Tuhan mengajarkan kita untuk mengampuni sebagaimana Dia telah mengampuni kita. Dalam khotbah ini, mari kita belajar untuk melepaskan beban yang menekan hati dan menemukan kebebasan sejati dalam pengampunan.            </p>
         </div>
     </div>
 
