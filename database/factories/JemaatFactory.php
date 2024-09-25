@@ -21,6 +21,7 @@ class JemaatFactory extends Factory
             'jenisKelamin'=> fake()->word(),
             'alamat'=>fake()->address(),
             'noHp'=>fake()->phoneNumber(),
+            'tempatLahir'=>fake()->city(),
             'tanggalLahir'=> fake()->date('d-m-Y'),
         ];
     }

@@ -11,7 +11,7 @@
     {{-- @vite('resources/css/app.css') --}}
 </head>
 
-<body>
+<body class="h-full">
     <!-- navbar -->
     <div class="navbar bg-red-900 shadow md:pt-5 sticky top-0 z-50">
         <div class="navbar-start">

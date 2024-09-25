@@ -44,9 +44,12 @@ Route::get('/registrasi',[RegisterController::class,'register'])
 Route::post('/registrasi', [RegisterController::class,"regisPost"])
 ->name('reg.post');
 
-Route::get('/jemaat',[JemaatController::class,'index']);
 Route::get('/jemaat',[JemaatController::class,'show'])->name("show.data");
 
+Route::get('/jemaat/add',[JemaatController::class, 'index']);
+Route::post('/jemaat/add',[JemaatController::class,"store"])
+->name('jemaatAdd');
+ 
 Route::middleware("auth")->group(function(){
     Route::view("/admin","admin.index")->name("index");
 });
