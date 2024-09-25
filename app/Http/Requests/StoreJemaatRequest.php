@@ -11,7 +11,7 @@ class StoreJemaatRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,12 @@ class StoreJemaatRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'namaLengkap'=>'required',
+            'jenisKelamin'=>'required',
+            'alamat'=>'required',
+            'noHp'=>'required',
+            'tempatLahir'=>'required',
+            'tanggalLahir'=>'required',
         ];
     }
 }

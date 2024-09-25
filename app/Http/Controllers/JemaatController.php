@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Jemaat;
 use App\Http\Requests\StoreJemaatRequest;
 use App\Http\Requests\UpdateJemaatRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class JemaatController extends Controller
@@ -14,7 +15,7 @@ class JemaatController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.jemaat.addJemaat');
     }
 
     /**
@@ -22,17 +23,40 @@ class JemaatController extends Controller
      */
     public function create()
     {
-        //
+   
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreJemaatRequest $request)
+    function store(StoreJemaatRequest $request)
     {
-        //
+    //    dd($request);
+       Jemaat::create([
+            'nama'=>$request->namaLengkap,
+            'jenisKelamin'=>$request->jenisKelamin,
+            'alamat'=>$request->alamat,
+            'noHp'=>$request->noHp,
+            'tanggalLahir'=>$request->tanggalLahir,
+            'tempatLahir'=>$request->tempatLahir,
+       ]);
+
+       return redirect('/jemaat');
     }
 
+    // function add(Request $request){
+
+    //     $validatedData = $request->validate([
+    //         'namaLengkap'=>'required',
+    //         'jenisKelamin'=>'required',
+    //         'alamat'=>'required',
+    //         'noHp'=>'required',
+    //         'tempatLahir'=>'required',
+    //         'tanggalLahir'=>'required',
+    //     ]);
+    //     dd('testt');
+    // }
+    
     /**
      * Display the specified resource.
      */

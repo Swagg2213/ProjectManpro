@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('jenisKelamin');
             $table->text('alamat');
             $table->integer('noHp');
+            $table->text('tempatLahir');
             $table->date('tanggalLahir');
             $table->timestamps();
         });
