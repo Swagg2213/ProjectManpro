@@ -12,6 +12,7 @@ class RegisterController extends Controller
     public function register() {
         return view('admin.RegistrationAdmin');
     }
+    
     function regisPost(Request $request) {
         $validatedData = $request->validate([
             "nama"=>"required",
