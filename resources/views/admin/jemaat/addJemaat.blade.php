@@ -1,8 +1,11 @@
 @extends('admin.base')
 @section('content')
+<div class="min-h-full">
 
-<div class="min-h-full mt-52">
- 
+    <div class="mb-4 w-3/5 max-w-full mx-auto">
+        <h1 class="text-2xl font-bold text-center">Tambahkan Jemaat</h1>
+    </div>
+
 <form class="w-3/5 max-w-full mx-auto" method="POST" action="/jemaat/add">
     @csrf
     <div class="relative z-0 w-full mb-5 group">
@@ -34,7 +37,21 @@
         <div class="grid md:grid-cols-2 md:gap-6">
 
     </div>
-    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+
+    <div class="mb-4">
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md  hover:bg-blue-950">
+            Submit
+        </button> 
+    </div>
+
+    <div class="mb-4">
+        <button type="submit" class="w-full  bg-slate-600 text-white font-semibold py-2 rounded-md hover:bg-slate-900">
+            <a href="{{ url('/jemaat') }}" >
+                Back
+            </a>
+        </button>
+    </div>
+
   </form>
 </div>
 @endsection

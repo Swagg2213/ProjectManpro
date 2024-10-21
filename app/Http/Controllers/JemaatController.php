@@ -69,24 +69,43 @@ class JemaatController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Jemaat $jemaat)
+    public function edit($id)
     {
-        //
+        $jemaat = Jemaat::where('id', $id)->first();
+        return view('admin.jemaat.editJemaat', ['jemaat'=>$jemaat]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateJemaatRequest $request, Jemaat $jemaat)
+    public function update(Request $request,  $id)
     {
         //
+        $jemaat = Jemaat::findOrFail($id);
+
+        $jemaat->update([
+            'nama'=>$request->namaLengkap,
+            'jenisKelamin'=>$request->jenisKelamin,
+            'alamat'=>$request->alamat,
+            'noHp'=>$request->noHp,
+            'tempatLahir'=>$request->tempatLahir,
+            'tanggalLahir'=>$request->tanggalLahir,
+        ]);
+
+        return redirect()->route('show.data');
     }
+    
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Jemaat $jemaat)
+    public function destroy($id)
     {
-        //
+        $jemaat = Jemaat::findOrFail($id);
+
+        $jemaat->delete();
+            
+        return redirect()->route('show.data');
+        
     }
 }
