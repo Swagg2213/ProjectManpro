@@ -2,6 +2,8 @@
 
 @section('content')
 
+<br>
+<br>
     <div class="container px-12 my-8 mx-auto grid grid-cols-1 gap-6">
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
             <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
@@ -24,7 +26,7 @@
         </div>
 
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN PEMUDA</h1>
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN FELLOWSHIP</h1>
             <hr>
 
             <div class = "max w-full h-auto px-6">
@@ -39,10 +41,13 @@
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
                 Tema : Jodoh Bukan di Tangan Tuhan?! <br>
                 Pembicara : Pdt. Erick Sudharma <br><br>
-                Sering kali kita mendengar bahwa jodoh di tangan Tuhan, namun benarkah demikian? Dalam khotbah ini, kita akan belajar bahwa Tuhan memberikan kita kebebasan untuk memilih, termasuk dalam soal pasangan hidup. Kuncinya bukan menunggu tanpa usaha, tetapi mencari dengan hikmat, sambil mempercayai Tuhan untuk membimbing hati dan langkah kita. Jodoh adalah tentang pilihan, persiapan, dan tanggung jawab, bukan sekadar takdir.        </div>
+                Sering kali kita mendengar bahwa jodoh di tangan Tuhan, namun benarkah demikian? Dalam khotbah ini, kita akan belajar bahwa Tuhan memberikan kita kebebasan untuk memilih, termasuk dalam soal pasangan hidup. Kuncinya bukan menunggu tanpa usaha, tetapi mencari dengan hikmat, sambil mempercayai Tuhan untuk membimbing hati dan langkah kita. Jodoh adalah tentang pilihan, persiapan, dan tanggung jawab, bukan sekadar takdir.        
+            </p>
+        </div>
 
+            
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN DOA PUASA</h1>
             <hr>
 
             <div class = "max w-full h-auto px-6">
@@ -54,13 +59,15 @@
                 09.00-11.00
             </h3><br>
 
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+            < class="text-slate-500 dark:text-slate-400 mt-2 text-large">
                 Tema : Bersinar di Tengah Kegelapan <br>
                 Pembicara : Pdt. Jessica Wijaya <br><br>
-                Tuhan memanggil kita untuk menjadi terang di dunia yang sering kali gelap dan penuh kekhawatiran. Melalui khotbah ini, kita akan diberi inspirasi untuk menjadi saksi yang berani, memancarkan terang Kristus di setiap tempat dan situasi.        </div>
+                Tuhan memanggil kita untuk menjadi terang di dunia yang sering kali gelap dan penuh kekhawatiran. Melalui khotbah ini, kita akan diberi inspirasi untuk menjadi saksi yang berani, memancarkan terang Kristus di setiap tempat dan situasi.        
+            
+        </div>
 
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">IBADAH GABUNGAN PGMW-3</h1>
+            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">IBADAH WANITA</h1>
             <hr>
 
             <div class = "max w-full h-auto px-6">
@@ -75,25 +82,8 @@
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
                 Tema : Hidup Berbuah Dalam Roh <br>
                 Pembicara : Pdt. Yohanes Manurung <br><br>
-                Apa yang terlihat dalam hidup orang yang dipenuhi Roh Kudus? Kita akan mengeksplorasi buah-buah Roh yang nyata dalam keseharian, bagaimana Tuhan bekerja dalam kita untuk menghasilkan karakter yang memuliakan-Nya.        </div>
-
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
-            <hr>
-
-            <div class = "max w-full h-auto px-6">
-                <br><img src="{{URL::asset('/images/church2.jpeg')}}">
-            </div>
-            
-            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
-                Minggu, 27 Oktober 2025 <br>
-                09.00-11.00
-            </h3><br>
-
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
-                Tema : Pengampunan yang Membebaskan <br>
-                Pembicara : Pdm. Ribka Mentari <br><br>
-                Pengampunan adalah kunci untuk bebas dari belenggu masa lalu. Tuhan mengajarkan kita untuk mengampuni sebagaimana Dia telah mengampuni kita. Dalam khotbah ini, mari kita belajar untuk melepaskan beban yang menekan hati dan menemukan kebebasan sejati dalam pengampunan.            </p>
+                Apa yang terlihat dalam hidup orang yang dipenuhi Roh Kudus? Kita akan mengeksplorasi buah-buah Roh yang nyata dalam keseharian, bagaimana Tuhan bekerja dalam kita untuk menghasilkan karakter yang memuliakan-Nya.        
+            </p>
         </div>
     </div>
 
