@@ -4,32 +4,32 @@
 <div class="dashboard">
     <div class="relative h-screen overflow-hidden">
         <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover z-10">
-            <source src="{{ asset('videos/IMG_1585.mp4') }}" type="video/mp4">
+            <source src="{{ asset('videos/vid-natal.mp4') }}" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-[#071525] opacity-70 z-20"></div>
         <div class="relative z-30 flex flex-col items-center justify-center h-full text-center">
-            <h1 class="mt-10 font-bold text-6xl text-white">GPPS MAHANAIM DD-8</h1>
-            <h2 class="mt-2 text-xl font-semibold text-white">Gereja Pantekosta Pusat Surabaya</h2>
+            <h1 class="mt-10 font-bold text-4xl text-white">GPPS MAHANAIM DD-8</h1>
+            <h2 class="mt-2 text-base font-semibold text-white">WE ARE FAMILY</h2>
             <img src="{{ asset('images/arrow-down.png') }}" alt="arrow-down" class="animate-bounce w-8 h-8 absolute bottom-7 left-1/2">
         </div>
     </div>
 
     <div class="tema-tahunan">
-        <img src="{{ asset('images/Imago-Dei.png') }}" alt="Tema Tahunan Gereja" class="w-full h-auto">
         <div class="headline relative overflow-hidden whitespace-nowrap py-5 bg-white text-[#125098]">
             <div class="flex animate-slide-left-infinite w-max">
-                <p class="text-center font-bold text-2xl mx-8">TEMA TAHUNAN</p>
-                <img src="images/arrow-up.png" alt="dot" class="w-7 h-5 mt-1"/>
-                <p class="text-center font-bold text-2xl mx-8">TEMA TAHUNAN</p>
-                <img src="images/arrow-up.png" alt="dot" class="w-7 h-5 mt-1"/>
-                <p class="text-center font-bold text-2xl mx-8">TEMA TAHUNAN</p>
-                <img src="images/arrow-up.png" alt="dot" class="w-7 h-5 mt-1"/>
-                <p class="text-center font-bold text-2xl mx-8">TEMA TAHUNAN</p>
-                <img src="images/arrow-up.png" alt="dot" class="w-7 h-5 mt-1"/>
-                <p class="text-center font-bold text-2xl mx-8">TEMA TAHUNAN</p>
-                <img src="images/arrow-up.png" alt="dot" class="w-7 h-5 mt-1"/>
+                <p class="text-center font-bold text-2xl mx-2">Roma 8:29</p>
+                <p class="text-center font-bold text-2xl mx-2">Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara.</p>
+                <p class="text-center font-bold text-2xl mx-2">Roma 8:29</p>
+                <p class="text-center font-bold text-2xl mx-2">Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara.</p>
+                <p class="text-center font-bold text-2xl mx-2">Roma 8:29</p>
+                <p class="text-center font-bold text-2xl mx-2">Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara.</p>
+                <p class="text-center font-bold text-2xl mx-2">Roma 8:29</p>
+                <p class="text-center font-bold text-2xl mx-2">Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara.</p>
+                <p class="text-center font-bold text-2xl mx-2">Roma 8:29</p>
+                <p class="text-center font-bold text-2xl mx-2">Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara.</p>
             </div>
         </div>
+        <img src="{{ asset('images/imago-dei.png') }}" alt="Tema Tahunan Gereja" class="w-full h-auto">
     </div>
 
     <div class=pt-60>
