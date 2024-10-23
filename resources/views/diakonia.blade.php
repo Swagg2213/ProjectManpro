@@ -1,9 +1,15 @@
-<!-- @extends('base.base') -->
-<!-- @section('content') -->
+@extends('base.base')
+
+
+@section('content')
+<br>
+<br>
+
 <div class="container m-auto">
         <h1 class="text-center font-bold mt-10 text-4xl">LAYANAN DIAKONIA</h1>
-        <br><br>
-    </div>
+        <br>
+        <br>
+</div>
 
     <div class="container px-20 mx-12 grid grid-cols-1 gap-12 md:grid-cols-3 flex-shrink: 1 text-center">
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-80">
@@ -57,5 +63,5 @@
             </div>
         </div>
     </div>
-<!-- 
-@endsection -->
+
+@endsection

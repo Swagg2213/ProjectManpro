@@ -23,6 +23,7 @@
       @yield('content')
     </div>
 
+    <br>
     <div>
         @include('includes.footer')
     </div>
