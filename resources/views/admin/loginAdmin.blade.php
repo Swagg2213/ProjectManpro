@@ -1,39 +1,23 @@
 @extends('admin.layout')
-@section('title', 'Login Admin')
-@section('content')
-<div class="container">
-    <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 
-  {{-- <html class="h-full bg-white">
-  <body class="h-full"> --}}
+@section('title', 'Login Admin')
+
+@section('content')
+   
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-      
-      <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
-      <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Shalom Aleichem</h2>
-    </div>
-    <div class="mt-20">
+  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+    <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Login Admin</h2>
+  </div>
+    
+  <!-- <div class="mt-20">
       @if (session()->has("success"))
       <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-green-500">
         <span class="inline-block align-middle mr-8">
           <b class="capitalize">{{ session('success') }}</b>
         </span>
+
         <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" onclick="closeAlert(event)">
           <span>×</span>
-      
         </button>
       </div>
       <script>
@@ -47,27 +31,28 @@
       </script>
       @endif
 
-    @if (session()->has('loginError'))
-    <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-red-500">
-      <span class="inline-block align-middle mr-8">
-        <b class="capitalize">{{ session('loginError') }}</b>
-      </span>
-      <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" onclick="closeAlert(event)">
-        <span>×</span>
-    
-      </button>
-    </div>
-    <script>
-      function closeAlert(event){
-        let element = event.target;
-        while(element.nodeName !== "BUTTON"){
-          element = element.parentNode;
-        }
-        element.parentNode.parentNode.removeChild(element.parentNode);
-      }
-    </script>
-    @endif
-  </div>
+      @if (session()->has('loginError'))
+        <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-red-500">
+          <span class="inline-block align-middle mr-8">
+            <b class="capitalize">{{ session('loginError') }}</b>
+          </span>
+          <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" onclick="closeAlert(event)">
+            <span>×</span>
+        
+          </button>
+        </div>
+        <script>
+          function closeAlert(event){
+            let element = event.target;
+            while(element.nodeName !== "BUTTON"){
+              element = element.parentNode;
+            }
+            element.parentNode.parentNode.removeChild(element.parentNode);
+          }
+        </script>
+      @endif
+  </div> -->
+
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
       <form class="space-y-6" action="{{ route('login.post') }}" method="POST">
@@ -92,12 +77,17 @@
         </div>
   
         <div>
-          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm  hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
         </div>
-        <a href="/registrasi">add admin</a>
-      </form>
+        <div class="mb-4">
     </div>
-  </div>
+      </form>
+      
+      <button type="submit" onclick="window.location='{{ url('/') }}'" class=" mt-4 w-full  bg-slate-600 text-white font-semibold py-2 rounded-md hover:bg-slate-900">
+            Back
+        </button>
+    </div>
+  
 
 </div>
 @endsection

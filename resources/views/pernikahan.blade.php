@@ -2,6 +2,8 @@
 
 @section('content')
 
+<br>
+<br>
 <style>
     #alertBox {
         display: none;

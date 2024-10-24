@@ -1,5 +1,14 @@
 @extends('admin.base')
+
 @section('content')
+<style>
+
+    th.sorting::before,th.sorting::after{
+        display: none !important;
+    }
+</style>
+
+
 <div class="min-h-full">
     <br>
 
@@ -8,10 +17,13 @@
     </div>
 
     <div class="mb-4 w-3/5 max-w-full mx-auto">
-        <button type="submit" class="w-full bg-red-300 text-white font-semibold py-2 rounded-md  hover:bg-red-900">
+        <button type="submit" class="w-full bg-red-900 text-white font-semibold py-2 rounded-md  hover:bg-red-700">
         <a href="/jemaat/add">ADD JEMAAT</a>
         </button> 
     </div>
+    
+    <br>
+
     <center>
         <div class=" w-10/12">
             <table id="tableJemaat" class="w-full whitespace-nowrap">

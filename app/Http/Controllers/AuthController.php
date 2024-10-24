@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Http\Requests\Auth\LoginRequest;
+use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -20,12 +24,18 @@ class AuthController extends Controller
             "username"=>"required",
             "password"=>"required",
         ]);
+        // dd($request->input('username'));
+
         $credentials = $request->only("username", "password");
+
+        $user = User::where('username', $credentials['username'])->first();
+        // dd($user);
+
         if(Auth::attempt($credentials)){
+            
             $request->session()->regenerate();
-            return redirect()->intended(route("index"));
+            return redirect()->intended(route("admin.index"));
         }
         return back()->with('loginError', 'login failed!');
     }
 }
-

@@ -18,11 +18,11 @@ protected $table= 'admins';
      *
      * @var array<int, string>
      */
-    // protected $fillable = [
-    //     'nama',
-    //     'username',
-    //     'password',
-    // ];
+    protected $fillable = [
+        'nama',
+        'username',
+        'password',
+    ];
     protected $guarded =['id'];
     /**
      * The attributes that should be hidden for serialization.
