@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <!-- jquery -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- DataTables CSS -->
@@ -38,7 +41,14 @@
                     <li><a href="/dataJemaat">Data Jemaat</a></li>
                     <li><a href="/renungan">Renungan</a></li>
                     <li><a href="/diakonia">Diakonia</a></li>
+                    @if (Auth::user())
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a></li>
+                    </form>
+                   @else
                     <li><a href="/login">Login</a></li>
+                    @endif
                     <li><a href="/registrasi">Add Admin</a></li>
                 </ul>
             </div>
@@ -51,7 +61,14 @@
                     <li><a href="/informasi">Informasi</a></li>
                     <li><a href="/renungan">Renungan</a></li>
                     <li><a href="/diakonia">Diakonia</a></li>
+                    @if (Auth::user())
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a></li>
+                    </form>
+                    @else
                     <li><a href="/login">Login</a></li>
+                    @endif
                     <li><a href="/registrasi">Add Admin</a></li>
                 </ul>
             </div>
