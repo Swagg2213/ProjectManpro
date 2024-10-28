@@ -38,4 +38,13 @@ class AuthController extends Controller
         }
         return back()->with('loginError', 'login failed!');
     }
+
+    function logout(Request $request){
+        Auth::guard('web')->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+        return redirect('/');
+    }
 }
