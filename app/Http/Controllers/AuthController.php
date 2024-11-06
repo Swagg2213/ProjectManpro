@@ -24,12 +24,10 @@ class AuthController extends Controller
             "username"=>"required",
             "password"=>"required",
         ]);
-        // dd($request->input('username'));
 
         $credentials = $request->only("username", "password");
 
         $user = User::where('username', $credentials['username'])->first();
-        // dd($user);
 
         if(Auth::attempt($credentials)){
             
