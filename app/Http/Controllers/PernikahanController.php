@@ -4,12 +4,30 @@ namespace App\Http\Controllers;
 
 use App\Models\Pernikahan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 
 class PernikahanController extends Controller
 {
     //
+    public function show(Pernikahan $pernikahan){
+
+        return view('admin.pernikahanDetail', 
+        // yg kiri nama yg dipanggil di webnya kanan itu asalnya
+        ['wedding'=>$pernikahan]);
+    }
+    
+    public function view(pernikahan $pernikahan)
+    {
+        $pernikahan = DB::table('weddings')->paginate(5);
+
+        // $paginator = Pernikahan::paginate(10);
+        // $items = $paginator->items(); // Get the collection of models
+        
+        return view('admin.pernikahan', ["weddings"=>$pernikahan]);
+    }
+
     public function insert(Request $request){
         
         $validatedata = $request->validate([
