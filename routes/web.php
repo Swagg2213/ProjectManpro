@@ -37,6 +37,10 @@ Route::middleware('auth')->group(function () {
     Route::put('/jemaat/edit/{id}', [JemaatController::class, 'edit'])->name('jemaat.edit');
     Route::delete('/jemaat/delete/{id}', [JemaatController::class, 'destroy'])->name('jemaat.delete');
     Route::put('/jemaat/update/{id}', [JemaatController::class, 'update'])->name('jemaat.update');
+
+    Route::get('/pernikahan/admin', [PernikahanController::class, 'view'])->name('pernikahan.view');
+    Route::get('/pernikahan/view/{pernikahan:id}', [PernikahanController::class, 'show']);
+    
 });
 
 Route::middleware("auth")->group(function(){

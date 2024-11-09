@@ -27,9 +27,11 @@ class Pernikahan extends Model
         'tanggalPernikahan',
         'createdAt',
         'updatedAt'
+        
     ];
 
     protected $table= 'weddings';
+    protected $hidden =['id'];
 
     use HasFactory;
 }
