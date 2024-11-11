@@ -2,9 +2,7 @@
 
 @section('content')
 
-<br>
-<br>
-    <div class="container px-12 my-8 mx-auto grid grid-cols-1 gap-6">
+    <div class="container pt-16 px-12 my-8 mx-auto grid grid-cols-1 gap-6">
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
             <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
             <hr>
@@ -59,7 +57,7 @@
                 09.00-11.00
             </h3><br>
 
-            < class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
                 Tema : Bersinar di Tengah Kegelapan <br>
                 Pembicara : Pdt. Jessica Wijaya <br><br>
                 Tuhan memanggil kita untuk menjadi terang di dunia yang sering kali gelap dan penuh kekhawatiran. Melalui khotbah ini, kita akan diberi inspirasi untuk menjadi saksi yang berani, memancarkan terang Kristus di setiap tempat dan situasi.        

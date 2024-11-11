@@ -1,4 +1,4 @@
-<div class="fixed navbar bg-[#125098] shadow-lg md:py-1 z-50">
+<div class="navbar fixed top-0 bg-[#125098] shadow-lg md:py-1 z-50">
     <div class="navbar-start">
         <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">

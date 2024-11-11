@@ -1,4 +1,4 @@
-@extends('base.base')
+@extends('admin.base')
 
 @section('content')
 <style>
@@ -47,41 +47,41 @@
     }
 </style>
 
-  <div class="container m-auto pt-16">
+  <div class="container m-auto">
     <h1 class="text-center font-bold mt-10 text-4xl">Layanan Penghiburan</h1>
   </div>
   <div>
-    <form action="{{ route('kematian.store') }}" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-10">
-      @csrf
+    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-10">
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <div>
           <label for="nama-lengkap" class="block text-sm font-semibold leading-6 text-gray-900">Nama Lengkap</label>
           <div class="mt-2.5">
-            <input type="text" name="namaLengkap" id="namaLengkap" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input type="text" name="nama-lengkap" id="nama-lengkap" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div>
           <label for="lahir" class="block text-sm font-semibold leading-6 text-gray-900">Tanggal Meninggal Dunia</label>
           <div class="mt-2.5">
-            <input type="date" name="tanggalMeninggal" id="tanggalKematian" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input type="text" name="lahir" id="lahir" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
         <div class="sm:col-span-2">
-          <label for="noHpL" class="block text-sm font-semibold leading-6 text-gray-900">No Telepon Keluarga/Wali</label>
-            <input type="number" name="noHp" id="noHp" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-        </div>
+          <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">No Telepon Keluarga / Wali</label>
+          <div class="mt-2.5">
+            <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
 
           <div class="sm:col-span-2">
           <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Permintaan Pemimpin Ibadah (Pdt)</label>
           <div class="mt-2.5">
-            <input type="text" name="pendeta" id="pendeta " autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
 
         <div class="sm:col-span-2">
           <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Keterangan Tambahan</label>
           <div class="mt-2.5">
-            <input type="text" name="keterangan" id="keterangan" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
             setTimeout(function() {
                 document.getElementById('alertBox').style.display = 'none';
                 document.getElementById('overlay').style.display = 'none';
-            }, 5000);
+            }, 3000);
         }
       </script>
     </form>

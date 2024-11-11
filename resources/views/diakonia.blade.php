@@ -5,63 +5,66 @@
 <br>
 <br>
 
-<div class="container m-auto">
+<div class="container m-auto pt-16">
         <h1 class="text-center font-bold mt-10 text-4xl">LAYANAN DIAKONIA</h1>
         <br>
         <br>
 </div>
 
-    <div class="container px-20 mx-12 grid grid-cols-1 gap-12 md:grid-cols-3 flex-shrink: 1 text-center">
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-80">
-            <div class = "w-full">
-                <img src="{{URL::asset('/images/death.jpg')}}">
+<div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-4 text-center">
+        
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <div class="w-full">
+                <img src="{{URL::asset('/images/death.jpg')}}" alt="Layanan Penghiburan">
             </div>
-
             <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Layanan Penghiburan</h3>
-        
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                Kami ingin menyatakan kasih Tuhan pada setiap masa sulit yang Anda lalui. Apabila Anda memerlukan bantuan maupun pelayanan, klik tombol dibawah ini untuk mendapatkan informasi selanjutnya.
-                <br><br>
+                Dalam masa-masa yang penuh duka, kami hadir untuk membawa cahaya kasih Tuhan. Setiap langkah yang Anda tempuh dalam kesedihan tidak perlu dijalani sendirian. Tekan tombol di bawah ini, dan bersama-sama kita akan berjalan dalam penghiburan serta kekuatan yang diberikan oleh kasih-Nya.
             </p>
-        
             <div class="mt-4 flex items-center justify-center">
                 <a href="/kematian" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
             </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-80">
-            <div class = "w-full">
-                <img src="{{URL::asset('/images/married.jpg')}}">
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <div class="w-full">
+                <img src="{{URL::asset('/images/married.jpg')}}" alt="Layanan Pernikahan">
             </div>
-
             <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Layanan Pernikahan</h3>
-        
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                Kami siap membantu Anda dalam mempersiapkan pernikahan kudus sebagai perwujudan kasih Tuhan. Klik tombol di bawah ini untuk mendapatkan bimbingan dan dukungan rohani dalam perjalanan menuju hari pernikahan Anda.
-                <br><br>
+                Pernikahan adalah wujud kasih Tuhan yang kudus, sebuah ikatan suci yang dipenuhi dengan cinta dan komitmen. Kami siap membantu Anda mempersiapkan momen istimewa ini dengan bimbingan rohani dan dukungan penuh kasih. Tekan tombol di bawah ini untuk mendapatkan panduan dalam perjalanan menuju hari yang penuh berkat.
             </p>
-        
             <div class="mt-4 flex items-center justify-center">
                 <a href="/pernikahan" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
             </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-80">
-            <div class = "w-full">
-                <img src="{{URL::asset('/images/pray.jpg')}}">
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <div class="w-full">
+                <img src="{{URL::asset('/images/pray.jpg')}}" alt="Permohonan Pokok Doa">
             </div>
-
             <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Permohonan Pokok Doa</h3>
-        
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                Jika Anda membutuhkan dukungan doa, Anda disarankan untuk dapat mengklik tombol di bawah ini agar dapat menghubungi pihak yang bersangkutan. Bersama-sama kita akan menaikkan doa ini dalam hadirat Tuhan.
-                <br><br>
+                Di saat-saat Anda membutuhkan kekuatan dalam doa, kami siap untuk berjalan bersama Anda dalam iman. Melalui doa yang tulus, kita akan mencari kedamaian dan pengharapan di hadapan Tuhan. Tekan tombol di bawah ini untuk terhubung dengan tim doa kami, dan mari kita bersama-sama menaikkan doa ini dalam kasih-Nya yang tak terbatas.
             </p>
-        
             <div class="mt-4 flex items-center justify-center">
-                <a href="https://www.whatsapp.com/" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
+                <a href="/pokokdoa" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            <div class="w-full">
+                <img src="{{URL::asset('/images/konseling.jpeg')}}" alt="Permohonan Pokok Doa">
+            </div>
+            <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Permohonan Konseling</h3>
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                Hidup terkadang membawa kita ke jalan yang penuh tantangan dan pertanyaan. Dalam setiap langkah yang penuh makna, kami hadir untuk mendampingi Anda menemukan kedamaian dan arah. Klik tombol di bawah ini untuk terhubung dengan konselor kami yang siap membantu Anda menapaki perjalanan ini dengan penuh pengertian dan kasih.
+            </p>
+            <div class="mt-4 flex items-center justify-center">
+                <a href="/konseling" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
             </div>
         </div>
     </div>
-
+</div>
 @endsection

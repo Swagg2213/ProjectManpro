@@ -4,6 +4,7 @@ use App\Http\Controllers\PernikahanController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\Jemaat;
 use App\Http\Controllers\JemaatController;
 use App\Http\Controllers\KematianController;
@@ -16,10 +17,13 @@ Route::get('/', function () {return view('dashboard');});
 Route::get('/dashboard', function () {return view('dashboard');});
 Route::get('/informasi', function () {return view('informasi');});
 Route::get('/renungan', function () {return view('renungan');});
+Route::get('/ren1',function(){return view('renunganDetail');});
 Route::get('/diakonia', function () {return view('diakonia');});
 Route::get('/pernikahan', function () {return view('pernikahan');});
 Route::post('/pernikahan/submit',[PernikahanController::class,"insert"])->name("pernikahan.post");
 Route::get('/kematian', function () {return view('kematian');});
+Route::get('/pokokdoa', function () {return view('pokokdoa');});
+Route::get('/konseling', function () {return view('konseling');});
 
 
 Route::post('/kematian',[KematianController::class, "store"])->name('kematian.store');
@@ -41,7 +45,10 @@ Route::middleware('auth')->group(function () {
     Route::put('/jemaat/edit/{id}', [JemaatController::class, 'edit'])->name('jemaat.edit');
     Route::delete('/jemaat/delete/{id}', [JemaatController::class, 'destroy'])->name('jemaat.delete');
     Route::put('/jemaat/update/{id}', [JemaatController::class, 'update'])->name('jemaat.update');
-
+    
+    Route::get('/event/admin', [EventController::class, 'view'])->name('event.view');
+    // Route::get('/event/view/{pernikahan:id}', [PernikahanController::class, 'show']);
+    
     Route::get('/pernikahan/admin', [PernikahanController::class, 'view'])->name('pernikahan.view');
     Route::get('/pernikahan/view/{pernikahan:id}', [PernikahanController::class, 'show']);
 
@@ -49,8 +56,7 @@ Route::middleware('auth')->group(function () {
     
     
 });
-
-
+Route::get('/event/admin', [EventController::class, 'view'])->name('event.view');
 Route::middleware("auth")->group(function(){
     Route::view("/admin","admin.index")->name("index");
 });
