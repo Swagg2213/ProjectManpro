@@ -18,6 +18,8 @@ Route::get('/diakonia', function () {return view('diakonia');});
 Route::get('/pernikahan', function () {return view('pernikahan');});
 Route::post('/pernikahan/submit',[PernikahanController::class,"insert"])->name("pernikahan.post");
 Route::get('/kematian', function () {return view('kematian');});
+Route::get('/pokokdoa', function () {return view('pokokdoa');});
+Route::get('/konseling', function () {return view('konseling');});
 
 //Admin Route 
 Route::get('/login',[AuthController::class,'login'])->name("login");
