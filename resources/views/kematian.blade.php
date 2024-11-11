@@ -47,7 +47,7 @@
     }
 </style>
 
-  <div class="container m-auto">
+  <div class="container m-auto pt-16">
     <h1 class="text-center font-bold mt-10 text-4xl">Layanan Penghiburan</h1>
   </div>
   <div>

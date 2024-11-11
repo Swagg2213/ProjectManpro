@@ -2,9 +2,7 @@
 
 @section('content')
 
-<br>
-<br>
-    <div class="container px-12 my-8 mx-auto grid grid-cols-1 gap-6">
+    <div class="container pt-16 px-12 my-8 mx-auto grid grid-cols-1 gap-6">
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
             <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
             <hr>

@@ -14,6 +14,7 @@ Route::get('/', function () {return view('dashboard');});
 Route::get('/dashboard', function () {return view('dashboard');});
 Route::get('/informasi', function () {return view('informasi');});
 Route::get('/renungan', function () {return view('renungan');});
+Route::get('/ren1',function(){return view('renunganDetail');});
 Route::get('/diakonia', function () {return view('diakonia');});
 Route::get('/pernikahan', function () {return view('pernikahan');});
 Route::post('/pernikahan/submit',[PernikahanController::class,"insert"])->name("pernikahan.post");

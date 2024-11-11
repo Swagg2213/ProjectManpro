@@ -2,8 +2,7 @@
 
 @section('content')
 @include('components.swallalert')
-<br>
-<br>
+
 <style>
     #alertBox {
         display: none;
@@ -52,7 +51,7 @@
 
   </style>
 
-  <div class="container m-auto">
+  <div class="container m-auto pt-16">
     <h1 class="text-center font-bold mt-10 text-4xl">Layanan Pernikahan</h1>
   </div>
 
@@ -196,16 +195,20 @@
             <input type="date" name="tanggalPernikahan" id="tanggalPernikahan" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
+        <div class="flex items-center my-4">
+          <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-checkbox" class="ms-2 text-sm font-semibold text-gray-900 dark:text-gray-300">Menampilkan informasi pernikahan di halaman informasi</label>
+        </div>
 
 
     <!-- submit button -->
-    <div class="mt-4 flex items-center justify-center d-grid gap-8">
+    <div class="my-8 flex items-center justify-center d-grid gap-8">
         <!-- Show alert after press the button -->
-      <button type="submit" class="submit-btn">Submit</button>
-
       <button class="cancel-btn">
         <a href="/diakonia">Back</a>
       </button>
+
+      <button type="submit" class="submit-btn">Submit</button>
     </div>
 
     <!-- alert box -->

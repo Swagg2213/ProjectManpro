@@ -5,7 +5,7 @@
 <br>
 <br>
 
-<div class="container m-auto">
+<div class="container m-auto pt-16">
         <h1 class="text-center font-bold mt-10 text-4xl">LAYANAN DIAKONIA</h1>
         <br>
         <br>
