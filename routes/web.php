@@ -6,7 +6,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Jemaat;
 use App\Http\Controllers\JemaatController;
+use App\Http\Controllers\KematianController;
 use App\Http\Controllers\RegisterController;
+use App\Models\Kematian;
 use Illuminate\Support\Facades\Route;
 
 // Jemaat Route
@@ -19,6 +21,8 @@ Route::get('/pernikahan', function () {return view('pernikahan');});
 Route::post('/pernikahan/submit',[PernikahanController::class,"insert"])->name("pernikahan.post");
 Route::get('/kematian', function () {return view('kematian');});
 
+
+Route::post('/kematian',[KematianController::class, "store"])->name('kematian.store');
 //Admin Route 
 Route::get('/login',[AuthController::class,'login'])->name("login");
 Route::post('/login',[AuthController::class,"loginPost"])->name("login.post");
@@ -40,8 +44,12 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/pernikahan/admin', [PernikahanController::class, 'view'])->name('pernikahan.view');
     Route::get('/pernikahan/view/{pernikahan:id}', [PernikahanController::class, 'show']);
+
+    Route::get('/kematian/show',[KematianController::class,'show']);
+    
     
 });
+
 
 Route::middleware("auth")->group(function(){
     Route::view("/admin","admin.index")->name("index");
