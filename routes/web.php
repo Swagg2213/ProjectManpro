@@ -4,6 +4,7 @@ use App\Http\Controllers\PernikahanController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\Jemaat;
 use App\Http\Controllers\JemaatController;
 use App\Http\Controllers\RegisterController;
@@ -40,12 +41,15 @@ Route::middleware('auth')->group(function () {
     Route::put('/jemaat/edit/{id}', [JemaatController::class, 'edit'])->name('jemaat.edit');
     Route::delete('/jemaat/delete/{id}', [JemaatController::class, 'destroy'])->name('jemaat.delete');
     Route::put('/jemaat/update/{id}', [JemaatController::class, 'update'])->name('jemaat.update');
-
+    
+    Route::get('/event/admin', [EventController::class, 'view'])->name('event.view');
+    // Route::get('/event/view/{pernikahan:id}', [PernikahanController::class, 'show']);
+    
     Route::get('/pernikahan/admin', [PernikahanController::class, 'view'])->name('pernikahan.view');
     Route::get('/pernikahan/view/{pernikahan:id}', [PernikahanController::class, 'show']);
     
 });
-
+Route::get('/event/admin', [EventController::class, 'view'])->name('event.view');
 Route::middleware("auth")->group(function(){
     Route::view("/admin","admin.index")->name("index");
 });
