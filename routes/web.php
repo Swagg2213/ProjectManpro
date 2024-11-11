@@ -49,6 +49,11 @@ Route::get('/jemaat',[JemaatController::class,'show'])->name("show.data");
 Route::get('/jemaat/add',[JemaatController::class, 'index']);
 Route::post('/jemaat/add',[JemaatController::class,"store"])
 ->name('jemaatAdd');
+
+Route::put('/jemaat/edit/{id}', [JemaatController::class, 'edit'])->name('jemaat.edit');
+Route::delete('/jemaat/delete/{id}', [JemaatController::class, 'destroy'])->name('jemaat.delete');
+Route::put('/jemaat/update/{id}', [JemaatController::class, 'update'])->name('jemaat.update');
+
  
 Route::middleware("auth")->group(function(){
     Route::view("/admin","admin.index")->name("index");
