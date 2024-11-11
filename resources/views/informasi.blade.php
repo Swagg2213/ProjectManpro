@@ -59,7 +59,7 @@
                 09.00-11.00
             </h3><br>
 
-            < class="text-slate-500 dark:text-slate-400 mt-2 text-large">
+            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
                 Tema : Bersinar di Tengah Kegelapan <br>
                 Pembicara : Pdt. Jessica Wijaya <br><br>
                 Tuhan memanggil kita untuk menjadi terang di dunia yang sering kali gelap dan penuh kekhawatiran. Melalui khotbah ini, kita akan diberi inspirasi untuk menjadi saksi yang berani, memancarkan terang Kristus di setiap tempat dan situasi.        

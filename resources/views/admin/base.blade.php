@@ -40,6 +40,8 @@
                     <li><a href="/home/admin">Home</a></li>
                     <li><a href="/dataJemaat">Data Jemaat</a></li>
                     <li><a href="/pernikahan/admin">Pernikahan</a></li>
+                    <li><a href="/kematian/admin">Kematian</a></li>
+                    <li><a href="/event/admin">Event</a></li>
                     @if (Auth::user())
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
