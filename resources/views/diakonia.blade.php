@@ -2,17 +2,13 @@
 
 
 @section('content')
-<br>
-<br>
 
 <div class="container m-auto pt-16">
         <h1 class="text-center font-bold mt-10 text-4xl">LAYANAN DIAKONIA</h1>
-        <br>
-        <br>
 </div>
 
-<div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 gap-12 md:grid-cols-4 text-center">
+<div class="container mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
         
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
             <div class="w-full">
@@ -55,7 +51,7 @@
 
         <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
             <div class="w-full">
-                <img src="{{URL::asset('/images/konseling.jpeg')}}" alt="Permohonan Pokok Doa">
+                <img src="{{URL::asset('/images/konseling.jpg')}}" alt="Permohonan Pokok Doa">
             </div>
             <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Permohonan Konseling</h3>
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">

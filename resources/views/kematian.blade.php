@@ -66,33 +66,36 @@
             <input type="date" name="tanggalMeninggal" id="tanggalKematian" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
+      </div>
 
-        <div class="sm:col-span-2">
+      <div class="sm:col-span-2 py-2">
           <label for="noHpL" class="block text-sm font-semibold leading-6 text-gray-900">No Telepon Keluarga/Wali</label>
+          <div class="mt-2 5">
             <input type="number" name="noHp" id="noHp" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-        </div>
+          </div>
+      </div>
 
-          <div class="sm:col-span-2">
+      <div class="sm:col-span-2 py-2">
           <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Permintaan Pemimpin Ibadah (Pdt)</label>
           <div class="mt-2.5">
             <input type="text" name="pendeta" id="pendeta " autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
 
-        <div class="sm:col-span-2">
+        <div class="sm:col-span-2 py-2">
           <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Keterangan Tambahan</label>
           <div class="mt-2.5">
             <input type="text" name="keterangan" id="keterangan" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
-      </div>
 
       <!-- submit button -->
-      <div class="mt-4 flex items-center justify-center d-grid gap-8">
+      <div class="my-8 flex items-center justify-center d-grid gap-8">
         <!-- Show alert after press the button -->
-        <button class="submit-btn" onclick="showAlert()">Kirim</button>
         <button class="cancel-btn">
           <a href="/diakonia">Batal</a>
         </button>
+
+        <button class="submit-btn" onclick="showAlert()">Kirim</button>
       </div>
 
       <!-- alert box -->
