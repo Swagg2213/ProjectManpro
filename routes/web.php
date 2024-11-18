@@ -1,16 +1,17 @@
 <?php
 
-use App\Http\Controllers\PernikahanController;
-use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\EventController;
+use App\Models\Kematian;
 use App\Http\Controllers\Jemaat;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\JemaatController;
 use App\Http\Controllers\KematianController;
 use App\Http\Controllers\RegisterController;
-use App\Models\Kematian;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RenunganController;
+use App\Http\Controllers\PernikahanController;
 
 // Jemaat Route
 Route::get('/', function () {return view('dashboard');});
@@ -53,6 +54,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/pernikahan/view/{pernikahan:id}', [PernikahanController::class, 'show']);
 
     Route::get('/kematian/show',[KematianController::class,'show']);
+    Route::get('/admin/renungan', [RenunganController::class,'index'])->name('renungan.index');
+Route::post('/admin/renungan', [RenunganController::class,'store'])->name('renungan.add');
     
     
 });

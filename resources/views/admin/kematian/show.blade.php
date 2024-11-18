@@ -12,15 +12,7 @@
 <div class="min-h-full">
     <br>
 
-    <div class="mb-4 w-3/5 max-w-full mx-auto">
-            <h1 class="text-2xl font-bold text-center">Daftar Jemaat</h1>
-    </div>
 
-    <div class="mb-4 w-3/5 max-w-full mx-auto">
-        <button type="submit" class="w-full bg-red-900 text-white font-semibold py-2 rounded-md  hover:bg-red-700">
-        <a href="/jemaat/add">ADD JEMAAT</a>
-        </button> 
-    </div>
     
     <br>
 
