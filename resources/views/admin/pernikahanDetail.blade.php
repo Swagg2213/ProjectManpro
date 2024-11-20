@@ -12,7 +12,7 @@
             <div class="flex mb-7">
                 <span class="font-semibold w-1/2 text-left">Rencana Tanggal Pernikahan</span>
                 <span class="mx-2">:</span>
-                <span id="tanggalPernikahan" class="text-gray-700">{{$wedding->tanggalPernikahan}}</span>
+                <span id="tanggalPernikahan" class="text-gray-700">{{ date('d F Y', strtotime($wedding->tanggalPernikahan)) }}</span>
             </div>
 
             <h2 class="text-lg bg-red-200 font-semibold mb-2 text-left">Data Perempuan</h2>
@@ -44,7 +44,7 @@
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Tanggal Lahir</span>
                 <span class="mx-2">:</span>
-                <span id="tanggalLahirP" class="text-gray-700">{{$wedding->tanggalLahirP}}</span>
+                <span id="tanggalLahirP" class="text-gray-700">{{ date('d F Y', strtotime($wedding->tanggalLahirP)) }}</span>
             </div>
             <div class="flex mb-7">
                 <span class="font-semibold w-1/2 text-left">Pernah Menikah</span>
@@ -81,7 +81,7 @@
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Tanggal Lahir</span>
                 <span class="mx-2">:</span>
-                <span id="tanggalLahirL" class="text-gray-700">{{$wedding->tanggalLahirL}}</span>
+                <span id="tanggalLahirL" class="text-gray-700">{{ date('d F Y', strtotime($wedding->tanggalLahirL)) }}</span>
             </div>
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Pernah Menikah</span>

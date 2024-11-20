@@ -35,7 +35,7 @@
                 <tr>
                     <td class="border px-6 py-4">{{ $kematian->id }}</td>
                     <td class="border px-6 py-4">{{ $kematian->namaLengkap}}</td>
-                    <td class="border px-6 py-4">{{ $kematian->tanggalMeninggal}}</td>
+                    <td class="border px-6 py-4">{{ date('d F Y', strtotime($kematian->tanggalMeninggal)) }}</td>
                     <td class="border px-6 py-4">{{ $kematian->noHp}}</td>
                     <td class="border px-6 py-4">{{ $kematian->pendeta}}</td>
                     <td class="border px-6 py-4">{{ $kematian->keterangan}}</td>
