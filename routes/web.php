@@ -12,13 +12,14 @@ use App\Http\Controllers\KematianController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RenunganController;
 use App\Http\Controllers\PernikahanController;
+use App\Models\Renungan;
 
 // Jemaat Route
 Route::get('/', function () {return view('dashboard');});
 Route::get('/dashboard', function () {return view('dashboard');});
 Route::get('/informasi', function () {return view('informasi');});
-Route::get('/renungan', function () {return view('renungan');});
-Route::get('/ren1',function(){return view('renunganDetail');});
+Route::get('/renungan', [RenunganController::class,'show']);
+Route::get('/renungan/{renungan:id}',[RenunganController::class,'showDetail']);
 Route::get('/diakonia', function () {return view('diakonia');});
 Route::get('/pernikahan', function () {return view('pernikahan');});
 Route::post('/pernikahan/submit',[PernikahanController::class,"insert"])->name("pernikahan.post");
@@ -55,7 +56,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/kematian/show',[KematianController::class,'show']);
     Route::get('/admin/renungan', [RenunganController::class,'index'])->name('renungan.index');
-Route::post('/admin/renungan', [RenunganController::class,'store'])->name('renungan.add');
+    Route::post('/admin/renungan', [RenunganController::class,'store'])->name('renungan.add');
+
     
     
 });

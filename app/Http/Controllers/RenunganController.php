@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Renungan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RenunganController extends Controller
 {
@@ -28,32 +29,37 @@ class RenunganController extends Controller
      */
     public function store(Request $request)
     {
-       // dd($request);
 
-       $request->validate([
-        'ayat'=>'required',
-        'isiRenungan'=>'required',
-        'pembuat'=>'required',
-        'tanggal'=>'required',
-       ]);
-       
-        Renungan::create([
-            'ayat'=>$request->ayat,
-            'isiRenungan'=>$request->isiRenungan,
-            'pembuat'=>$request->pembuat,
-            'tanggal'=>$request->tanggal,
+        $validatedData = $request->validate([
+            'ayat'=>'required',
+            'judul'=>'required',
+            'isiRenungan'=>'required',
+            'pembuat'=>'required',
+            'poster'=>'required|image',
+            'tanggal'=>'required'
         ]);
 
+        $validatedData['poster'] = $request->file('poster')->store('upload');
+       
+        
+        Renungan::create($validatedData);
+        
         return redirect('/admin/renungan');
     }
     /**
      * Display the specified resource.
      */
-    public function show(Renungan $renungan)
+    public function show()
     {
-        //
+        $renungans = DB::table('renungans')->paginate(5);
+        return view('renungan',["renungans"=>$renungans]);
     }
 
+    public function showDetail(Renungan $renungan)
+    {
+
+        return view('renunganDetail',["renungan"=>$renungan]);
+    }
     /**
      * Show the form for editing the specified resource.
      */

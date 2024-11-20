@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('renungans', function (Blueprint $table) {
             $table->id();
+            $table->string('judul');
             $table->string('ayat');
             $table->string('isiRenungan');
             $table->string('pembuat');
             $table->date('tanggal');
+            $table->string('poster');
             $table->timestamps();
         });
     }

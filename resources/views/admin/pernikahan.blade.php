@@ -27,7 +27,7 @@
             <tbody>
                 @foreach ($weddings as $wedding)
                 <tr>
-                    <td class="border px-6 py-4">{{ $wedding->tanggalPernikahan}}</td>
+                    <td class="border px-6 py-4">{{ date('d F Y', strtotime($wedding->tanggalPernikahan)) }}</td>
                     <td class="border px-6 py-4">{{ $wedding->namaL}}</td>
                     <td class="border px-6 py-4">{{ $wedding->namaP}}</td>
                     <td class="border px-6 py-4">
