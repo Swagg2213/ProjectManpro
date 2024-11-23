@@ -10,14 +10,9 @@
 
 
 <div class="min-h-full">
-    <br>
-
-
-    
-    <br>
 
     <center>
-        <div class=" w-10/12">
+        <div class="pt-24 w-10/12">
             <table id="tableKematians" class="w-full whitespace-nowrap">
                 <thead>
                     <tr class="text-left">
@@ -43,14 +38,14 @@
                 @endforeach
             </tbody>
             </table>
-            {{-- <script>
+            <script>
                 $(document).ready(function () {
                     $('#tableJemaat').DataTable({
                         scrollX: true 
                     });
                 });
             </script>
-            {{ $jemaats->links('vendor.pagination.tailwind') }} --}}
+            {{ $kematians->links('vendor.pagination.tailwind') }}
         </div>
     </center>
 </div>

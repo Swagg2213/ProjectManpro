@@ -50,7 +50,7 @@ class KematianController extends Controller
      */
     public function show(kematian $kematian)
     {
-        $kematians = DB::table('kematians')->paginate(5);
+        $kematians = DB::table('kematians')->paginate(10);
         return view('admin.kematian.show',["kematians"=>$kematians]);
     }
 

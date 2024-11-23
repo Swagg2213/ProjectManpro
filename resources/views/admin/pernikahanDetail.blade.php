@@ -5,7 +5,7 @@
 @section('content')
 <center>
     
-    <div class="bg-white shadow-md rounded-lg p-6 w-10/12">
+    <div class="bg-white shadow-sm rounded-lg mt-20 mb-5 border-2 border-slate-200 p-6 w-10/12">
         <h1 class="text-xl font-bold mb-4 text-center">Data Pernikahan</h1>
         <div id="data-display" class="mb-4">
             <!-- Data will be displayed here -->
@@ -15,7 +15,7 @@
                 <span id="tanggalPernikahan" class="text-gray-700">{{ date('d F Y', strtotime($wedding->tanggalPernikahan)) }}</span>
             </div>
 
-            <h2 class="text-lg bg-red-200 font-semibold mb-2 text-left">Data Perempuan</h2>
+            <h2 class="text-lg bg-red-300 font-semibold mb-2 text-left">Data Perempuan</h2>
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Nama Perempuan</span>
                 <span class="mx-2">:</span>
@@ -89,12 +89,11 @@
                 <span id="menikahL" class="text-gray-700">{{$wedding->menikahL}}</span>
             </div>
 
-            <div class="w-6/12 mt-6">
-    <a href="{{ route('pernikahan.view') }}" class="block w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-        Back
-    </a>
-</div>
-
+            <div class="w-6/12 pt-6">
+                <a href="{{ route('pernikahan.view') }}" class="block w-full bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded text-center">
+                    Back
+                </a>
+            </div>
         </div>
     </div>
 
