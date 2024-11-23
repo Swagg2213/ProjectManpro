@@ -95,11 +95,11 @@
           <a href="/diakonia">Batal</a>
         </button>
 
-        <button class="submit-btn" onclick="showAlert()">Kirim</button>
+        <button class="submit-btn" onclick="showAlert(event)">Kirim</button>
       </div>
 
       <!-- alert box -->
-      <div id="alertBox" class="mt-3 relative flex flex-col w-full p-3 text-sm text-white bg-green-600 rounded-md">
+      <div id="alertBox" class="mt-3 relative flex flex-col w-auto p-3 text-sm text-white bg-green-600 rounded-md">
         <p class="flex text-base">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 mr-2 mt-0.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
@@ -112,16 +112,18 @@
       <div id="overlay"></div>
 
       <script>
-        // menampilkan pop-up
-        function showAlert() {
-            document.getElementById('alertBox').style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
+        function showAlert(event) {
+          event.preventDefault();  // Mencegah form dikirim langsung, biar pop-up kelihatan
 
-            // Menghilangkan pop-up setelah 3 detik
-            setTimeout(function() {
-                document.getElementById('alertBox').style.display = 'none';
-                document.getElementById('overlay').style.display = 'none';
-            }, 5000);
+          document.getElementById('alertBox').style.display = 'block';
+          document.getElementById('overlay').style.display = 'block';
+
+          setTimeout(function() {
+            document.getElementById('alertBox').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+
+            document.querySelector('form').submit();
+          }, 5000);
         }
       </script>
     </form>

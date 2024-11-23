@@ -67,7 +67,7 @@
           <div class="flex items-center justify-between">
             <label for="password"  class="block text-sm font-medium leading-6 text-gray-900">Kata Sandi</label>
             <div class="text-sm">
-              <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Lupa Kata Sandi?</a>
+              <a href="#" class="font-semibold text-blue-600 hover:text-blue-400">Lupa Kata Sandi?</a>
             </div>
           </div>
           <div class="mt-2">
@@ -76,13 +76,11 @@
         </div>
   
         <div>
-          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm  hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+          <button type="submit" class="mt-4 w-full  bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-800">Sign in</button>
         </div>
-        <div class="mb-4">
-    </div>
       </form>
       
-      <button type="submit" onclick="window.location='{{ url('/') }}'" class=" mt-4 w-full  bg-slate-600 text-white font-semibold py-2 rounded-md hover:bg-slate-900">
+      <button type="submit" onclick="window.location='{{ url('/') }}'" class=" mt-4 w-full  bg-slate-600 text-white font-semibold py-2 rounded-md hover:bg-slate-700">
             Back
         </button>
     </div>

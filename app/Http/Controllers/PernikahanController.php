@@ -20,7 +20,7 @@ class PernikahanController extends Controller
     
     public function view(pernikahan $pernikahan)
     {
-        $pernikahan = DB::table('weddings')->paginate(5);
+        $pernikahan = DB::table('weddings')->paginate(10);
 
         // $paginator = Pernikahan::paginate(10);
         // $items = $paginator->items(); // Get the collection of models

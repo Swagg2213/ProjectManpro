@@ -55,7 +55,7 @@ class JemaatController extends Controller
      */
     public function show(Jemaat $jemaat)
     {
-        $jemaats = DB::table('jemaats')->paginate(5);
+        $jemaats = DB::table('jemaats')->paginate(10);
         return view('admin.jemaat.jemaatShow',["jemaats"=>$jemaats]);
     }
 

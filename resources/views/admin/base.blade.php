@@ -25,7 +25,7 @@
 
 <body class="h-full">   
     <!-- navbar -->
-    <div class="navbar bg-red-900 shadow md:pt-5 sticky top-0 z-50">
+    <div class="navbar fixed top-0 bg-[#125098] shadow-lg md:py-1 z-50">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -37,12 +37,12 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a href="/home/admin">Home</a></li>
-                    <li><a href="/dataJemaat">Data Jemaat</a></li>
-                    <li><a href="/pernikahan/admin">Pernikahan</a></li>
-                    <li><a href="/kematian/show">Kematian</a></li>
-                    {{-- <li><a href="/event/admin">Event</a></li> --}}
-                    <li><a href="/admin/renungan">Renungan</a></li>
+                    <li><a href="/home/admin" class="rounded-md hover:bg-[#113257]">Home</a></li>
+                    <li><a href="/dataJemaat" class="rounded-md hover:bg-[#113257]">Data Jemaat</a></li>
+                    <li><a href="/pernikahan/admin" class="rounded-md hover:bg-[#113257]">Pernikahan</a></li>
+                    <li><a href="/kematian/show" class="rounded-md hover:bg-[#113257]">Kematian</a></li>
+                    {{-- <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]">Event</a></li> --}}
+                    <li><a href="/admin/renungan" class="rounded-md hover:bg-[#113257]">Renungan</a></li>
                     @if (Auth::user())
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
@@ -54,25 +54,28 @@
                     <li><a href="/registrasi">Add Admin</a></li>
                 </ul>
             </div>
-            <img src="/logo.png" alt="" class="w-16 ml-3 md:w-20 md:ml-20">
+            <div class="w-16 ml-3 md:w-20 md:ml-10 text-lg font-bold text-white">
+                MAHANAIM
+            </div>
+            <!-- <img src="/logo.png" alt="" class="w-16 ml-3 md:w-20 md:ml-20"> -->
         </div>
-            <div class="navbar-center hidden lg:flex text-lg text-white">
+            <div class="navbar-center hidden lg:flex text-sm font-semibold text-white">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a href="/home/admin">Home</a></li>
-                    <li><a href="/jemaat">Data Jemaat</a></li>
-                    <li><a href="/pernikahan/admin">Pernikahan</a></li>
-                    <li><a href="/kematian/show">Kematian</a></li>
-                    {{-- <li><a href="/event/admin">Event</a></li> --}}
-                    <li><a href="/admin/renungan">Renungan</a></li>
+                    <li><a href="/home/admin" class="rounded-md hover:bg-[#113257]">Home</a></li>
+                    <li><a href="/jemaat" class="rounded-md hover:bg-[#113257]">Data Jemaat</a></li>
+                    <li><a href="/pernikahan/admin" class="rounded-md hover:bg-[#113257]">Pernikahan</a></li>
+                    <li><a href="/kematian/show" class="rounded-md hover:bg-[#113257]">Kematian</a></li>
+                    {{-- <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]">Event</a></li> --}}
+                    <li><a href="/admin/renungan" class="rounded-md hover:bg-[#113257]">Renungan</a></li>
+                    <li><a href="/registrasi" class="rounded-md hover:bg-[#113257]">Add Admin</a></li>
                     @if (Auth::user())
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a></li>
+                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();" class="rounded-md hover:bg-[#113257]">Logout</a></li>
                     </form>
                     @else
                     <li><a href="/login">Login</a></li>
                     @endif
-                    <li><a href="/registrasi">Add Admin</a></li>
                 </ul>
             </div>
     
