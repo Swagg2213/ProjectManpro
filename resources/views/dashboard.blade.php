@@ -3,8 +3,8 @@
 @section('content')
 <div class="dashboard">
     <div class="relative h-screen overflow-hidden">
-        <img src="{{ asset('images/cover-2.jpg') }}" alt="Foto Gereja" class="absolute inset-0 w-full h-full object-cover z-10">
-        <div class="absolute inset-0 bg-[#071525] opacity-70 z-20"></div>
+        <img src="{{ asset('images/cover-4.jpg') }}" alt="Foto Gereja" class="absolute inset-0 w-full h-full object-cover z-10">
+        <div class="absolute inset-0 bg-[#071525] opacity-30 z-20"></div>
         <div class="relative z-30 flex flex-col items-center justify-center h-full text-center">
             <h1 class="mt-10 font-bold text-6xl text-white">GPPS MAHANAIM DD-8</h1>
             <h2 class="mt-2 text-xl font-semibold text-white">WE ARE FAMILY</h2>
