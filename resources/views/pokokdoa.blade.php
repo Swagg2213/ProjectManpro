@@ -3,8 +3,8 @@
 @section('content')
 <br>
 <br>
-<div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8 text-center">
+<div class="flex items-center justify-center min-h-screen py-14">
+    <div class="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8 text-center border-2 border-slate-200">
         <h1 class="text-2xl font-bold text-slate-900 mb-4">Permohonan Doa</h1><br>
         <p class="text-slate-500 mb-6 text-lg leading-relaxed">
             Di saat-saat hidup terasa berat dan kekuatan kita diuji, kami hadir untuk mendukung Anda melalui kekuatan doa. Kami memahami bahwa ada momen dalam hidup ketika kita merasa perlu mengandalkan sesuatu yang lebih besar dari diri kita sendiri, sebuah kasih yang tidak terbatas dan kekuatan yang tidak pernah berkurang. Bersama-sama, kita akan mencari kedamaian dan pengharapan di hadapan Tuhan, menyerahkan setiap kekhawatiran, kesedihan, dan harapan kepada-Nya dalam doa yang tulus.
