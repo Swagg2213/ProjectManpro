@@ -2,87 +2,145 @@
 
 @section('content')
 
-    <div class="container pt-16 px-12 my-8 mx-auto grid grid-cols-1 gap-6">
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN UMUM</h1>
-            <hr>
+    <div class="container pt-16 px-12 my-8 mx-auto space-y-6">
 
-            <div class = "max w-full h-auto px-6">
-                <br><img src="{{URL::asset('/images/ibadah1.jpeg')}}">
+        <!-- Kebaktian Umum -->
+        <div id="infinite-loop" class="relative w-full h-56 md:h-[550px] overflow-hidden rounded-lg bg-slate-900">
+            <!-- Item 1 -->
+            <div class="absolute inset-0 opacity-100 animate-fadeLoop" style="animation-delay: 0s;">
+                <img src="{{ asset('images/kebaktian-umum/kebaktian-1.jpg') }}" class="block w-full h-full object-cover" alt="...">
             </div>
-            
-            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
-                Minggu, 12 September 2025 <br>
-                09.00-11.00
-            </h3><br>
-
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
-                Tema : Kasih yang Tak Pernah Gagal <br>
-                Pembicara : Pdt. Yohanes Manurung <br><br>
-                Kasih Tuhan mengalir tanpa henti dalam kehidupan kita. Saat kita merasa lelah dan tak berdaya, kasih-Nya selalu ada, membawa kekuatan baru. Mari datang dan temukan cinta yang tak pernah gagal ini, yang mampu mengubah setiap hati yang terbuka.
-            </p>
+            <!-- Item 2 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 6.67s;">
+                <img src="{{ asset('images/kebaktian-umum/kebaktian-2.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 13.33s;">
+                <img src="{{ asset('images/kebaktian-umum/kebaktian-3.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061e39] to-transparent"></div>
+            <div class="informasi-1 absolute inset-0 flex items-end justify-center z-30 pb-14">
+                <div class="text-center space-y-2">
+                    <p class="font-bold text-6xl text-white">KEBAKTIAN UMUM</p>
+                    <p class="font-bold text-3xl text-white">Sabtu, 18.00 WIB</p>
+                </div>    
+            </div>
+        </div> 
+        
+        <!-- Ibadah Kaum Wanita -->
+        <div id="infinite-loop" class="relative w-full h-56 md:h-[550px] overflow-hidden rounded-lg bg-slate-900">
+            <!-- Item 1 -->
+            <div class="absolute inset-0 opacity-100 animate-fadeLoop" style="animation-delay: 0s;">
+                <img src="{{ asset('images/w2m/w2m-1.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 6.67s;">
+                <img src="{{ asset('images/w2m/w2m-2.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 13.33s;">
+                <img src="{{ asset('images/w2m/w2m-3.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061e39] to-transparent"></div>
+            <div class="informasi-1 absolute inset-0 flex items-end justify-center z-30 pb-14">
+                <div class="text-center space-y-2">
+                    <p class="font-bold text-6xl text-white">IBADAH KAUM WANITA</p>
+                    <p class="font-bold text-3xl text-white">Selasa (Minggu Kedua), 19.00 WIB</p>
+                </div>
+            </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN FELLOWSHIP</h1>
-            <hr>
-
-            <div class = "max w-full h-auto px-6">
-                <br><img src="{{URL::asset('/images/ibadah2.jpeg')}}">
+        <!-- Doa Puasa -->
+        <div id="infinite-loop" class="relative w-full h-56 md:h-[550px] overflow-hidden rounded-lg bg-slate-900">
+            <!-- Item 1 -->
+            <div class="absolute inset-0 opacity-100 animate-fadeLoop" style="animation-delay: 0s;">
+                <img src="{{ asset('images/doa-puasa/doa-puasa-1.jpg') }}" class="block w-full h-full object-cover" alt="...">
             </div>
-            
-            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
-                Sabtu, 1 Oktober 2025 <br>
-                18.00-19.30
-            </h3><br>
-
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
-                Tema : Jodoh Bukan di Tangan Tuhan?! <br>
-                Pembicara : Pdt. Erick Sudharma <br><br>
-                Sering kali kita mendengar bahwa jodoh di tangan Tuhan, namun benarkah demikian? Dalam khotbah ini, kita akan belajar bahwa Tuhan memberikan kita kebebasan untuk memilih, termasuk dalam soal pasangan hidup. Kuncinya bukan menunggu tanpa usaha, tetapi mencari dengan hikmat, sambil mempercayai Tuhan untuk membimbing hati dan langkah kita. Jodoh adalah tentang pilihan, persiapan, dan tanggung jawab, bukan sekadar takdir.        
-            </p>
+            <!-- Item 2 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 6.67s;">
+                <img src="{{ asset('images/doa-puasa/doa-puasa-2.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 13.33s;">
+                <img src="{{ asset('images/doa-puasa/doa-puasa-3.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061e39] to-transparent"></div>
+            <div class="informasi-1 absolute inset-0 flex items-end justify-center z-30 pb-14">
+                <div class="text-center space-y-2">
+                    <p class="font-bold text-6xl text-white">DOA PUASA</p>
+                    <p class="font-bold text-3xl text-white">Jumat, 10.00 WIB</p>
+                </div>
+            </div>
         </div>
 
-            
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">KEBAKTIAN DOA PUASA</h1>
-            <hr>
-
-            <div class = "max w-full h-auto px-6">
-                <br><img src="{{URL::asset('/images/ibadah3.jpeg')}}">
+        <!-- Fellowship -->
+        <div id="infinite-loop" class="relative w-full h-56 md:h-[550px] overflow-hidden rounded-lg bg-slate-900">
+            <!-- Item 1 -->
+            <div class="absolute inset-0 opacity-100 animate-fadeLoop" style="animation-delay: 0s;">
+                <img src="{{ asset('images/fellowship/fellowship-1.jpg') }}" class="block w-full h-full object-cover" alt="...">
             </div>
-            
-            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
-                Minggu, 20 Oktober 2025 <br>
-                09.00-11.00
-            </h3><br>
-
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
-                Tema : Bersinar di Tengah Kegelapan <br>
-                Pembicara : Pdt. Jessica Wijaya <br><br>
-                Tuhan memanggil kita untuk menjadi terang di dunia yang sering kali gelap dan penuh kekhawatiran. Melalui khotbah ini, kita akan diberi inspirasi untuk menjadi saksi yang berani, memancarkan terang Kristus di setiap tempat dan situasi.        
-            
+            <!-- Item 2 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 6.67s;">
+                <img src="{{ asset('images/fellowship/fellowship-2.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 13.33s;">
+                <img src="{{ asset('images/fellowship/fellowship-3.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061e39] to-transparent"></div>
+            <div class="informasi-1 absolute inset-0 flex items-end justify-center z-30 pb-14">
+                <div class="text-center space-y-2">
+                    <p class="font-bold text-6xl text-white">FELLOWSHIP</p>
+                    <p class="font-bold text-3xl text-white">Rabu (1 bulan sekali), 19.00 WIB</p>
+                </div>
+            </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-            <h1 class="text-slate-900 dark:text-white text-base text-2xl tracking-tight">IBADAH WANITA</h1>
-            <hr>
-
-            <div class = "max w-full h-auto px-6">
-                <br><img src="{{URL::asset('/images/ibadah4.jpeg')}}">
+        <!-- Latihan Paduan Suara -->
+        <div id="infinite-loop" class="relative w-full h-56 md:h-[550px] overflow-hidden rounded-lg bg-slate-900">
+            <!-- Item 1 -->
+            <div class="absolute inset-0 opacity-100 animate-fadeLoop" style="animation-delay: 0s;">
+                <img src="{{ asset('images/latihan-padus/latihan-padus-1.jpg') }}" class="block w-full h-full object-cover" alt="...">
             </div>
-            
-            <h3 class="text-slate-900 dark:text-white text-base text-xl tracking-tight text-right">
-                Jumat, 25 Oktober 2025 <br>
-                18.00-19.30
-            </h3><br>
-
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-large">
-                Tema : Hidup Berbuah Dalam Roh <br>
-                Pembicara : Pdt. Yohanes Manurung <br><br>
-                Apa yang terlihat dalam hidup orang yang dipenuhi Roh Kudus? Kita akan mengeksplorasi buah-buah Roh yang nyata dalam keseharian, bagaimana Tuhan bekerja dalam kita untuk menghasilkan karakter yang memuliakan-Nya.        
-            </p>
+            <!-- Item 2 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 6.67s;">
+                <img src="{{ asset('images/latihan-padus/latihan-padus-2.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 13.33s;">
+                <img src="{{ asset('images/latihan-padus/latihan-padus-3.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061e39] to-transparent"></div>
+            <div class="informasi-1 absolute inset-0 flex items-end justify-center z-30 pb-14">
+                <div class="text-center space-y-2">
+                    <p class="font-bold text-6xl text-white">LATIHAN PADUAN SUARA</p>
+                    <p class="font-bold text-3xl text-white">Rabu, 19.00 WIB</p>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <!-- Latihan PAW -->
+        <div id="infinite-loop" class="relative w-full h-56 md:h-[550px] overflow-hidden rounded-lg bg-slate-900">
+            <!-- Item 1 -->
+            <div class="absolute inset-0 opacity-100 animate-fadeLoop" style="animation-delay: 0s;">
+                <img src="{{ asset('images/latihan-paw/latihan-paw-1.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 6.67s;">
+                <img src="{{ asset('images/latihan-paw/latihan-paw-2.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="absolute inset-0 opacity-0 animate-fadeLoop" style="animation-delay: 13.33s;">
+                <img src="{{ asset('images/latihan-paw/latihan-paw-3.jpg') }}" class="block w-full h-full object-cover" alt="...">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#061e39] to-transparent"></div>
+            <div class="informasi-1 absolute inset-0 flex items-end justify-center z-30 pb-14">
+                <div class="text-center space-y-2">
+                    <p class="font-bold text-6xl text-white">LATIHAN PRAISE & WORSHIP</p>
+                    <p class="font-bold text-3xl text-white">Jumat, 18.30 WIB</p>
+                </div>
+            </div>
+        </div>
+    </div>     
 
 @endsection

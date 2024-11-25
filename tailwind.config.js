@@ -27,11 +27,17 @@ export default {
                     '0%': { transform: 'translateX(100%)' },
                     '100%': { transform: 'translateX(0)' },
                 },
+                fadeLoop: {
+                    '0%, 20%': { opacity: '0' }, // Gambar mulai fade-in setelah 20% waktu
+                    '20%, 80%': { opacity: '1' }, // Gambar terlihat jelas di 20%-80%
+                    '80%, 100%': { opacity: '0' }, // Gambar mulai fade-out
+                },
             },
             animation: {
                 'slide-left-infinite': 'slide-left 30s linear infinite',
                 slideInLeft: 'slideInFromLeft 1s ease-out forwards',
                 slideInRight: 'slideInFromRight 1s ease-out forwards',
+                fadeLoop: 'fadeLoop 20s infinite',
             },
         },
     },
