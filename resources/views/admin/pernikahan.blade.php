@@ -15,7 +15,7 @@
 
     <center>
         <div class="py-4 w-10/12">
-            <table id="tablePernikahan" class="w-full whitespace-nowrap">
+            <table id="tablePernikahan" class="display nowrap w-full whitespace-nowrap">
                 <thead>
                     <tr class="text-left">
                         <th class="border px-6 py-4">Tanggal Pernikahan</th>
@@ -44,7 +44,11 @@
             <script>
                 $(document).ready(function () {
                     $('#tablePernikahan').DataTable({
-                        scrollX: true 
+                        scrollX: true,
+                        autoWidth: false,
+                        columnDefs: [
+                            { targets: '_all', className: 'align-middle' }
+                        ]
                     });
                 });
             </script>

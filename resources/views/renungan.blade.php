@@ -14,9 +14,9 @@
                 <img src="{{ asset('storage/'. $renungan->poster) }}">
             </div>
 
-            <h5 class="text-white font-bold mb-3 mt-1">{{ $renungan->judul }}</h5>
-            <h6 class="text-white font-bold mb-1">Renungan Oleh: {{ $renungan->pembuat }}</h6>
-            <p class="text-center text-white">
+            <h5 class="text-slate-800 font-bold mb-3 mt-1">{{ $renungan->judul }}</h5>
+            <h6 class="text-slate-800 font-bold mb-1">Renungan Oleh: {{ $renungan->pembuat }}</h6>
+            <p class="text-center text-slate-800">
                 {{ Str::limit($renungan->isiRenungan, 200) }}
             </p>
             
