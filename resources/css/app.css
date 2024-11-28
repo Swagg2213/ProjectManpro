@@ -17,3 +17,16 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
+.dataTables_wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+table.dataTable {
+    width: 100%;
+}
+
+table.dataTable th, table.dataTable td {
+    padding: 10px 15px;
+    box-sizing: border-box;
+}

@@ -44,7 +44,7 @@
         <div class="py-1">
             <button type="submit" class="w-full  bg-slate-600 text-white font-semibold py-2 rounded-md hover:bg-slate-700">
                 <a href="{{ url('/jemaat') }}" >
-                    Back'
+                    Back
                 </a>
             </button>
         </div>
