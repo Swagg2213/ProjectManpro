@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('date');
             $table->time('startTime');
             $table->time('endTime');
-            $table->string('theme');
+            $table->string('days');
             $table->string('speaker');
             $table->string('detail');
             $table->timestamps();

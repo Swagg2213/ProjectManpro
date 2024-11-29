@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
 
@@ -22,7 +23,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -30,7 +31,27 @@ class EventController extends Controller
      */
     public function store(StoreEventRequest $request)
     {
-        //
+        //dd($request);
+        $validatedData = $request->validate([
+            'title'=>'required',
+            'days'=>'required',
+            'startTime'=>'required',
+            'endTime'=>'required',
+            'speaker'=>'required',
+            'detail'=>'required',
+            'date'=>'required',
+            'image'=>'required|image'
+        ]);
+
+        
+
+        $validatedData['image'] = $request->file('image')->store('eventImage');
+       
+        
+        Event::create($validatedData);
+
+        
+        return redirect('/event/admin');
     }
 
     /**
@@ -38,7 +59,8 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        //
+        $events = DB::table('events')->paginate(5);
+        return view('informasi',["events"=>$events]);
     }
 
     /**
