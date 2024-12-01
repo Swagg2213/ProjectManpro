@@ -36,7 +36,7 @@ class KematianController extends Controller
             'namaLengkap'=>'required',
             'tanggalMeninggal'=>'required',
             'noHp'=>'required',
-            'pendeta'=>'required',
+            'namaPemohon'=>'required',
             'keterangan'=>'required',
         ]);
 

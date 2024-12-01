@@ -55,7 +55,7 @@
       @csrf
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <div>
-          <label for="nama-lengkap" class="block text-sm font-semibold leading-6 text-gray-900">Nama Lengkap</label>
+          <label for="nama-lengkap" class="block text-sm font-semibold leading-6 text-gray-900">Nama Lengkap Alm./Almh.</label>
           <div class="mt-2.5">
             <input type="text" name="namaLengkap" id="namaLengkap" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
@@ -76,9 +76,9 @@
       </div>
 
       <div class="sm:col-span-2 py-2">
-          <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Permintaan Pemimpin Ibadah (Pdt)</label>
+          <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Nama Lengkap Pemohon</label>
           <div class="mt-2.5">
-            <input type="text" name="pendeta" id="pendeta " autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input type="text" name="namaPemohon" id="namaPemohon" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
 
         <div class="sm:col-span-2 py-2">

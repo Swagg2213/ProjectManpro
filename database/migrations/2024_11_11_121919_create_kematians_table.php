@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('namaLengkap');
             $table->date('tanggalMeninggal');
             $table->integer('noHp');
-            $table->string('pendeta');
+            $table->string('namaPemohon');
             $table->string('keterangan');
             $table->timestamps();
         });

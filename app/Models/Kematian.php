@@ -13,7 +13,7 @@ class Kematian extends Model
         'namaLengkap',
         'tanggalMeninggal',
         'noHp',
-        'pendeta',
+        'namaPemohon',
         'keterangan'
     ];
     protected $table= 'kematians';
