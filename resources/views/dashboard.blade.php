@@ -8,11 +8,13 @@
         <div class="relative z-30 flex flex-col items-center justify-center h-full text-center">
             <h1 class="mt-10 font-bold text-6xl text-white">GPPS MAHANAIM DD-8</h1>
             <h2 class="mt-2 text-xl font-semibold text-white">WE ARE FAMILY</h2>
-            <img src="{{ asset('images/arrow-down.png') }}" alt="arrow-down" class="animate-bounce w-8 h-8 absolute bottom-7 left-1/2">
+            <a href="#tema-tahunan">
+                <img src="{{ asset('images/arrow-down.png') }}" alt="arrow-down" class="animate-bounce w-8 h-8 absolute bottom-7 left-1/2">
+            </a>
         </div>
     </div>
 
-    <div class="tema-tahunan">
+    <div id="tema-tahunan" class="tema-tahunan">
         <div class="moving-text relative overflow-hidden whitespace-nowrap py-5 bg-white text-[#125098]">
             <div class="flex animate-slide-left-infinite w-max">
                 <p class="text-center font-bold text-2xl mx-2">Roma 8:29</p>
@@ -100,5 +102,16 @@
             misiTextRight.classList.add("opacity-0");
         }
     });
+    document.querySelector('a[href="#tema-tahunan"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    const offset = 60;
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+    });
+});
 </script>
 @endsection

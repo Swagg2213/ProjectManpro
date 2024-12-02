@@ -17,10 +17,10 @@
                 <thead>
                     <tr class="text-left">
                         <th class="border px-6 py-4">No</th>
-                        <th class="border px-6 py-4">Nama Lengkap</th>
+                        <th class="border px-6 py-4">Nama Lengkap Alm./Almh.</th>
                         <th class="border px-6 py-4">Tanggal Meninggal</th>
                         <th class="border px-6 py-4 w-64 text-wrap">No Telepon Keluarga/Wali</th>
-                        <th class="border px-6 py-4">Pendeta</th>
+                        <th class="border px-6 py-4">Nama Pemohon</th>
                         <th class="border px-6 py-4">Keterangan</th>
 
             </tr>
@@ -32,7 +32,7 @@
                     <td class="border px-6 py-4">{{ $kematian->namaLengkap}}</td>
                     <td class="border px-6 py-4">{{ date('d F Y', strtotime($kematian->tanggalMeninggal)) }}</td>
                     <td class="border px-6 py-4">{{ $kematian->noHp}}</td>
-                    <td class="border px-6 py-4">{{ $kematian->pendeta}}</td>
+                    <td class="border px-6 py-4">{{ $kematian->namaPemohon}}</td>
                     <td class="border px-6 py-4">{{ $kematian->keterangan}}</td>
                 </tr>
                 @endforeach
