@@ -41,7 +41,7 @@
                     <li><a href="/dataJemaat" class="rounded-md hover:bg-[#113257]">Data Jemaat</a></li>
                     <li><a href="/pernikahan/admin" class="rounded-md hover:bg-[#113257]">Pernikahan</a></li>
                     <li><a href="/kematian/show" class="rounded-md hover:bg-[#113257]">Kematian</a></li>
-                    {{-- <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]">Event</a></li> --}}
+                    <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]">Event</a></li>
                     <li><a href="/admin/renungan" class="rounded-md hover:bg-[#113257]">Renungan</a></li>
                     @if (Auth::user())
                     <form method="POST" action="{{ route('logout') }}">
@@ -54,9 +54,9 @@
                     <li><a href="/registrasi">Add Admin</a></li>
                 </ul>
             </div>
-            <div class="w-16 ml-3 md:w-20 md:ml-10 text-lg font-bold text-white">
+            <a href="/home/admin" class="w-16 ml-3 md:w-20 md:ml-10 text-lg font-bold text-white">
                 MAHANAIM
-            </div>
+            </a>
             <!-- <img src="/logo.png" alt="" class="w-16 ml-3 md:w-20 md:ml-20"> -->
         </div>
             <div class="navbar-center hidden lg:flex text-sm font-semibold text-white">
@@ -65,7 +65,7 @@
                     <li><a href="/jemaat" class="rounded-md hover:bg-[#113257]">Data Jemaat</a></li>
                     <li><a href="/pernikahan/admin" class="rounded-md hover:bg-[#113257]">Pernikahan</a></li>
                     <li><a href="/kematian/show" class="rounded-md hover:bg-[#113257]">Kematian</a></li>
-                    {{-- <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]">Event</a></li> --}}
+                    <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]"> Add Event</a></li>
                     <li><a href="/admin/renungan" class="rounded-md hover:bg-[#113257]">Renungan</a></li>
                     <li><a href="/registrasi" class="rounded-md hover:bg-[#113257]">Add Admin</a></li>
                     @if (Auth::user())

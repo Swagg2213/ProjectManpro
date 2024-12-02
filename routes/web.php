@@ -17,7 +17,7 @@ use App\Models\Renungan;
 // Jemaat Route
 Route::get('/', function () {return view('dashboard');});
 Route::get('/dashboard', function () {return view('dashboard');});
-Route::get('/informasi', function () {return view('informasi');});
+Route::get('/informasi', [EventController::class,'show']);
 Route::get('/renungan', [RenunganController::class,'show']);
 Route::get('/renungan/{renungan:id}',[RenunganController::class,'showDetail']);
 Route::get('/diakonia', function () {return view('diakonia');});
@@ -58,6 +58,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/renungan', [RenunganController::class,'index'])->name('renungan.index');
     Route::post('/admin/renungan', [RenunganController::class,'store'])->name('renungan.add');
 
+    Route::post("/admin/addevent", [EventController::class, 'store'])->name('event.add');
     
     
 });
