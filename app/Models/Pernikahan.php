@@ -25,6 +25,7 @@ class Pernikahan extends Model
         'menikahL',
 
         'tanggalPernikahan',
+        'allow',
         'createdAt',
         'updatedAt'
         
