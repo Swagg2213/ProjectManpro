@@ -29,7 +29,7 @@ class PernikahanController extends Controller
     }
 
     public function insert(Request $request){
-        dd($request);
+        // dd($request);
         $validatedata = $request->validate([
             'namaP'=>'required',
             'alamatP'=>'required',
