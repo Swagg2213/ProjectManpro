@@ -16,9 +16,9 @@
                 <li><a href="/login" class="rounded-md hover:bg-[#113257]">Login</a></li>
             </ul>
         </div>
-        <div class="w-16 ml-3 md:w-20 md:ml-10 text-lg font-bold text-white">
+        <a href="/" class="w-16 ml-3 md:w-20 md:ml-10 text-lg font-bold text-white">
             MAHANAIM
-        </div>
+        </a>
         <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHauxvjjiHK7rw5dudnadlQM2uUFZrus-WfQ&s" alt="" class="w-16 ml-3 md:w-20 md:ml-10"> -->
     </div>
         <div class="navbar-center hidden lg:flex absolute inset-x-0 justify-center text-sm font-semibold text-white">
