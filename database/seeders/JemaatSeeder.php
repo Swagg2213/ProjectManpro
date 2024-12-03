@@ -13,5 +13,28 @@ class JemaatSeeder extends Seeder
     public function run(): void
     {
         //
+        // DB::table('admins')->insert([
+        //     [ 'nama' => fake()->name(),
+        //     'jenisKelamin'=> fake()->word(),
+        //     'alamat'=>fake()->address(),
+        //     'noHp'=>fake()->phoneNumber(),
+        //     'tempatLahir'=>fake()->city(),
+        //     'tanggalLahir'=> fake()->date('d-m-Y')],
+            
+        //     [ 'nama' => fake()->name(),
+        //     'jenisKelamin'=> fake()->word(),
+        //     'alamat'=>fake()->address(),
+        //     'noHp'=>fake()->phoneNumber(),
+        //     'tempatLahir'=>fake()->city(),
+        //     'tanggalLahir'=> fake()->date('d-m-Y')],
+            
+        //     [ 'nama' => fake()->name(),
+        //     'jenisKelamin'=> fake()->word(),
+        //     'alamat'=>fake()->address(),
+        //     'noHp'=>fake()->phoneNumber(),
+        //     'tempatLahir'=>fake()->city(),
+        //     'tanggalLahir'=> fake()->date('d-m-Y')],
+
+        // ]);
     }
 }

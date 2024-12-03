@@ -49,7 +49,13 @@
             <div class="flex mb-7">
                 <span class="font-semibold w-1/2 text-left">Pernah Menikah</span>
                 <span class="mx-2">:</span>
-                <span id="menikahP" class="text-gray-700">{{$wedding->menikahP}}</span>
+                <span id="menikahP" class="text-gray-700">
+                    @php
+                        if ($wedding->menikahP == 0) $class = 'Belum';
+                        if ($wedding->menikahP == 1) $class = 'Sudah';
+                    @endphp
+                    {{$class}}
+                </span>
             </div>
 
             <h2 class="text-lg bg-blue-300 font-semibold mb-2 text-left">Data Laki-laki</h2>
@@ -84,9 +90,15 @@
                 <span id="tanggalLahirL" class="text-gray-700">{{ date('d F Y', strtotime($wedding->tanggalLahirL)) }}</span>
             </div>
             <div class="flex mb-2">
-                <span class="font-semibold w-1/2 text-left">Pernah Menikah</span>
+                <span class="font-semibold w-1/2 text-left">Pernah Menikah Sebelumnya</span>
                 <span class="mx-2">:</span>
-                <span id="menikahL" class="text-gray-700">{{$wedding->menikahL}}</span>
+                <span id="menikahL" class="text-gray-700">
+                    @php
+                        if ($wedding->menikahL == 0) $class = 'Belum';
+                        if ($wedding->menikahL == 1) $class = 'Sudah';
+                    @endphp
+                    {{$class}}
+                </span>
             </div>
 
             <div class="w-6/12 pt-6">

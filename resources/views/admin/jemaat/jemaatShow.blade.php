@@ -17,9 +17,11 @@
     </div>
 
     <div class="py-10 w-3/5 max-w-full mx-auto">
-        <button type="submit" class="w-full bg-[#125098] text-white font-semibold py-2 rounded-md  hover:bg-[#113257] shadow-md">
-            <a href="/jemaat/add">ADD JEMAAT</a>
-        </button> 
+        <a href="/jemaat/add">
+            <button type="submit" class="w-full bg-[#125098] text-white font-semibold py-2 rounded-md  hover:bg[#113257] shadow-md">
+                ADD JEMAAT
+            </button> 
+        </a>
     </div>
 
     <center>
