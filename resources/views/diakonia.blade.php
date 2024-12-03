@@ -21,7 +21,7 @@
                 Dalam masa-masa yang penuh duka, kami hadir untuk membawa cahaya kasih Tuhan. Setiap langkah yang Anda tempuh dalam kesedihan tidak perlu dijalani sendirian. Tekan tombol di bawah ini, dan bersama-sama kita akan berjalan dalam penghiburan serta kekuatan yang diberikan oleh kasih-Nya.
             </p>
             <div class="mt-auto pt-5 flex items-center justify-center">
-                <a href="/kematian" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">
+                <a href="/kematian" class="rounded-md bg-indigo-500 hover:bg-indigo-600  px-3 py-3 text-sm font-semibold text-white">
                     Selengkapnya
                 </a>
             </div>
@@ -37,7 +37,7 @@
                 Pernikahan adalah wujud kasih Tuhan yang kudus, sebuah ikatan suci yang dipenuhi dengan cinta dan komitmen. Kami siap membantu Anda mempersiapkan momen istimewa ini dengan bimbingan rohani dan dukungan penuh kasih. Tekan tombol di bawah ini untuk mendapatkan panduan dalam perjalanan menuju hari yang penuh berkat.
             </p>
             <div class="mt-auto pt-5 flex items-center justify-center">
-                <a href="/pernikahan" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
+                <a href="/pernikahan" class="rounded-md bg-indigo-500 hover:bg-indigo-600 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
             </div>
         </div>
 
@@ -50,7 +50,7 @@
                 Di saat-saat Anda membutuhkan kekuatan dalam doa, kami siap untuk berjalan bersama Anda dalam iman. Melalui doa yang tulus, kita akan mencari kedamaian dan pengharapan di hadapan Tuhan. Tekan tombol di bawah ini untuk terhubung dengan tim doa kami, dan mari kita bersama-sama menaikkan doa ini dalam kasih-Nya yang tak terbatas.
             </p>
             <div class="mt-auto pt-5 flex items-center justify-center">
-                <a href="/pokokdoa" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
+                <a href="/pokokdoa" class="rounded-md bg-indigo-500 bg-indigo-500 hover:bg-indigo-600  px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
                 Hidup terkadang membawa kita ke jalan yang penuh tantangan dan pertanyaan. Dalam setiap langkah yang penuh makna, kami hadir untuk mendampingi Anda menemukan kedamaian dan arah. Klik tombol di bawah ini untuk terhubung dengan konselor kami yang siap membantu Anda menapaki perjalanan ini dengan penuh pengertian dan kasih.
             </p>
             <div class="mt-auto pt-5 flex items-center justify-center">
-                <a href="/konseling" class="rounded-md bg-indigo-500 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
+                <a href="/konseling" class="rounded-md bg-indigo-500 hover:bg-indigo-600 px-3 py-3 text-sm font-semibold text-white">Selengkapnya</a>
             </div>
         </div>
     </div>

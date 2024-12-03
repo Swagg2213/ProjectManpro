@@ -12,7 +12,7 @@
             <br><br>
             Tekan tombol di bawah ini untuk menghubungi pihak gereja melalui nomor yang tertera, dan mari kita bersama-sama membawa setiap permohonan ini ke hadapan Tuhan, berpegang pada kasih-Nya yang selalu ada, dalam setiap langkah yang kita jalani.            
         </p><br>
-        <a href="https://wa.me/087733110956" class="rounded-md bg-green-500 px-6 py-3 text-lg font-semibold text-white hover:bg-green-600 transition duration-200" target="_blank">Hubungi Kami di WhatsApp</a>
+        <a href="https://wa.me/6281217474548" class="rounded-md bg-green-500 px-6 py-3 text-lg font-semibold text-white hover:bg-green-600 transition duration-200" target="_blank">Hubungi Kami di WhatsApp</a>
     </div>
 </div>
 @endsection

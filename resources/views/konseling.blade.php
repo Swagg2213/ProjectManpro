@@ -14,7 +14,7 @@
             <br><br>
             Tekan tombol di bawah ini untuk menghubungi pihak gereja melalui nomor yang tertera dan berbicara dengan konselor kami, yang akan mendampingi Anda dalam perjalanan ini, membimbing Anda dengan kasih dan doa.
         </p><br>
-        <a href="https://wa.me/62xxxxxxxxxxx" class="rounded-md bg-green-500 px-6 py-3 text-lg font-semibold text-white hover:bg-green-600 transition duration-200" target="_blank">Hubungi Kami di WhatsApp</a>
+        <a href="https://wa.me/6281217474548" class="rounded-md bg-green-500 px-6 py-3 text-lg font-semibold text-white hover:bg-green-600 transition duration-200" target="_blank">Hubungi Kami di WhatsApp</a>
     </div>
 </div>
 @endsection
