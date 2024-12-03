@@ -29,7 +29,7 @@ class PernikahanController extends Controller
     }
 
     public function insert(Request $request){
-        
+        dd($request);
         $validatedata = $request->validate([
             'namaP'=>'required',
             'alamatP'=>'required',
@@ -48,6 +48,8 @@ class PernikahanController extends Controller
             'menikahL'=>'required',
 
             'tanggalPernikahan'=>'required',
+
+            'allows'=>'required',
 
         ], [
             'namaP.required'=>'Nama Lengkap Perempuan Harus diisi',
@@ -94,6 +96,7 @@ class PernikahanController extends Controller
                 'tanggalLahirL' => $validatedata['tanggalLahirL'],
                 'menikahL' => $validatedata['menikahL'],
                 'tanggalPernikahan' => $validatedata['tanggalPernikahan'],
+                'allow'=>$validatedata['allow'],
                 'updated_at' => now(),
                 'created_at' => now(),
             ]);

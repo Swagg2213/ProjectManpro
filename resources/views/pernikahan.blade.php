@@ -197,9 +197,11 @@
             <input type="date" name="tanggalPernikahan" id="tanggalPernikahan" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
-        <div class="flex items-center my-4 px-7 sm:px-0">
-          <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-          <label for="default-checkbox" class="ms-2 text-sm font-semibold text-gray-900 dark:text-gray-300">Menampilkan informasi pernikahan di halaman informasi</label>
+
+
+        <div class="flex items-center my-4">
+          <input id="default-checkbox" name="allow" type="checkbox" value="yes" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-checkbox" class="ms-2 text-sm font-semibold text-red-600 dark:text-red-600">Menampilkan informasi pernikahan di halaman informasi</label>
         </div>
 
 

@@ -1,127 +1,53 @@
 @extends('admin.base')
-
 @section('content')
-<style>
-  #alertBox {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-    }
+<div class="min-h-full">
 
-    /* Overlay untuk latar belakang ketika pop-up muncul */
-    #overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-    }
+    <div class="pt-[105px] w-3/5 max-w-full mx-auto">
+        <h1 class="text-2xl font-bold text-center">Tambahkan Informasi</h1>
+    </div>
 
-    .submit-btn {
-      padding: 10px 20px;
-      background-color: #4F46E5;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      text-align: center;
-    }
-    
-    .cancel-btn {
-      padding: 10px 20px;
-      background-color: #ff000f;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      text-align: center;
-    }
-</style>
-
-  <div class="container m-auto">
-    <h1 class="text-center font-bold mt-10 text-4xl">Layanan Penghiburan</h1>
-  </div>
-  <div>
-    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-10">
-      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-        <div>
-          <label for="nama-lengkap" class="block text-sm font-semibold leading-6 text-gray-900">Nama Lengkap</label>
-          <div class="mt-2.5">
-            <input type="text" name="nama-lengkap" id="nama-lengkap" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
+    <form class="py-4 w-3/5 max-w-full mx-auto" enctype="multipart/form-data" method="POST" action="{{ route('event.add') }}">
+        @csrf
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="title" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nama Kegiatan</label>
         </div>
-        <div>
-          <label for="lahir" class="block text-sm font-semibold leading-6 text-gray-900">Tanggal Meninggal Dunia</label>
-          <div class="mt-2.5">
-            <input type="text" name="lahir" id="lahir" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="days" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Hari Kegiatam</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="time" name="startTime" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Jam Mulai Kegiatan</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="time" name="endTime" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Jam Selesai Kegiatam</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="speaker" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Pembicara</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="detail" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Detail Kegiatan</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="date" name="date" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Tanggal Renungan</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="file" name="image" id="poster" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Upload Poster</label>
         </div>
 
-        <div class="sm:col-span-2">
-          <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">No Telepon Keluarga / Wali</label>
-          <div class="mt-2.5">
-            <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
-
-          <div class="sm:col-span-2">
-          <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Permintaan Pemimpin Ibadah (Pdt)</label>
-          <div class="mt-2.5">
-            <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
-
-        <div class="sm:col-span-2">
-          <label for="gereja" class="block text-sm font-semibold leading-6 text-gray-900">Keterangan Tambahan</label>
-          <div class="mt-2.5">
-            <input type="text" name="gereja" id="gereja" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
+        <div class="py-4">
+            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md  hover:bg-blue-800">
+                Submit
+            </button> 
         </div>
-      </div>
 
-      <!-- submit button -->
-      <div class="mt-4 flex items-center justify-center d-grid gap-8">
-        <!-- Show alert after press the button -->
-        <button class="submit-btn" onclick="showAlert()">Kirim</button>
-        <button class="cancel-btn">
-          <a href="/diakonia">Batal</a>
-        </button>
-      </div>
-
-      <!-- alert box -->
-      <div id="alertBox" class="mt-3 relative flex flex-col w-full p-3 text-sm text-white bg-green-600 rounded-md">
-        <p class="flex text-base">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 mr-2 mt-0.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
-            </svg>
-            Data telah diterima, terima kasih!
-        </p>
-      </div>
-
-      <!-- Overlay -->
-      <div id="overlay"></div>
-
-      <script>
-        // menampilkan pop-up
-        function showAlert() {
-            document.getElementById('alertBox').style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
-
-            // Menghilangkan pop-up setelah 3 detik
-            setTimeout(function() {
-                document.getElementById('alertBox').style.display = 'none';
-                document.getElementById('overlay').style.display = 'none';
-            }, 3000);
-        }
-      </script>
     </form>
-  </div>
 </div>
 @endsection
+

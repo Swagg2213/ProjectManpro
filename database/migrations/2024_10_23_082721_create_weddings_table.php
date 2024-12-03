@@ -30,6 +30,7 @@ return new class extends Migration
             $table->boolean('menikahL');
 
             $table->date('tanggalPernikahan');
+            $table->boolean('allow');
             $table->timestamps();
         });
     }

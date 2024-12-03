@@ -14,12 +14,12 @@ class Event extends Model
         'date',
         'startTime',
         'endTime',
-        'theme',
+        'days',
         'speaker',
         'detail'
         ];
     
-        protected $table= 'jemaats';
+        protected $table= 'events';
         protected $guarded =['id'];
 
     use HasFactory;
