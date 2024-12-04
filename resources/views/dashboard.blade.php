@@ -43,7 +43,7 @@
 
     <div class="visi-misi">
         <div class="relative h-30 overflow-hidden py-24 px-10 text-[#125098]">
-            <img src="{{ asset('images/content-1.jpg') }}" alt="PAW" class="absolute inset-0 w-full h-full object-cover z-10">
+            <img src="{{ asset('images/content-1.jpg') }}" alt="PAW" class="absolute inset-0 w-full h-full object-cover z-10 blur-md">
             <div class="absolute inset-0 bg-white opacity-80 z-20"></div>
             <div class="relative z-30 flex flex-col items-center justify-center h-full text-center">
                 <h1 id="move-left" class="text-center font-bold text-3xl opacity-0">VISI & MISI GPPS Mahanaim</h1>
