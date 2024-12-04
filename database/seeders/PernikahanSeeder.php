@@ -16,42 +16,42 @@ class PernikahanSeeder extends Seeder
         //
         DB::table('weddings')->insert([
             [ 'namaP'=>'Joy Felicia',
-            'alamatP'=>'jl. Nuri no. 15',
+            'alamatP'=>'Jl. Nuri no. 15',
             'gerejaP'=>'GPPS MAHANAIM',
-            'noHpP'=>'081234567',
+            'noHpP'=>'089612345678',
             'tempatLahirP'=>'Jakarta',
             'tanggalLahirP'=>'1997-12-03',
             'menikahP'=>'0',
             
             'namaL'=>'Marvel Justin',
-            'alamatL'=>'jl. Kutilang no. 85',
+            'alamatL'=>'Jl. Kutilang no. 85',
             'gerejaL'=>'GPPS MAHANAIM',
-            'noHpL'=>'08133367',
+            'noHpL'=>'08133367998',
             'tempatLahirL'=>'Solo',
             'tanggalLahirL'=>'1994-09-08',
             'menikahL'=>'0',
 
             'tanggalPernikahan'=>'2025-01-09',        
-            'allow'=>'1',],
+            ],
 
             [ 'namaP'=>'Maria Anderson',
-            'alamatP'=>'jl. Ahmad Yani no. 10',
+            'alamatP'=>'Jl. Ahmad Yani no. 10',
             'gerejaP'=>'GPPS MAHANAIM',
-            'noHpP'=>'08117765',
+            'noHpP'=>'08117765008',
             'tempatLahirP'=>'Surabaya',
             'tanggalLahirP'=>'1999-12-13',
             'menikahP'=>'0',
             
             'namaL'=>'Martin Hartono',
-            'alamatL'=>'jl. Sosrokartono no. 125',
+            'alamatL'=>'Jl. Sosrokartono no. 125',
             'gerejaL'=>'GPPS MAHANAIM',
-            'noHpL'=>'08131125',
+            'noHpL'=>'081311259987',
             'tempatLahirL'=>'Jogja',
             'tanggalLahirL'=>'1993-10-08',
             'menikahL'=>'0',
 
             'tanggalPernikahan'=>'2025-02-19',        
-            'allow'=>'1',],
+            ],
         ]);
     }
 }
