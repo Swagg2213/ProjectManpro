@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
 
         @foreach ($events as $event)
 
