@@ -17,7 +17,7 @@ use App\Models\Renungan;
 // Jemaat Route
 Route::get('/', function () {return view('dashboard');});
 Route::get('/dashboard', function () {return view('dashboard');});
-Route::get('/informasi', [EventController::class,'show']);
+Route::get('/informasi', [EventController::class,'index']);
 Route::get('/renungan', [RenunganController::class,'show']);
 Route::get('/renungan/{renungan:id}',[RenunganController::class,'showDetail']);
 Route::get('/diakonia', function () {return view('diakonia');});
@@ -48,7 +48,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/jemaat/delete/{id}', [JemaatController::class, 'destroy'])->name('jemaat.delete');
     Route::put('/jemaat/update/{id}', [JemaatController::class, 'update'])->name('jemaat.update');
     
-    Route::get('/event/admin', [EventController::class, 'view'])->name('event.view');
+    Route::get('/event/admin', [EventController::class, 'index']);
+    Route::get('/admin/addevent',[EventController::class,'view']);
     // Route::get('/event/view/{pernikahan:id}', [PernikahanController::class, 'show']);
     
     Route::get('/pernikahan/admin', [PernikahanController::class, 'view'])->name('pernikahan.view');
@@ -59,6 +60,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/admin/renungan', [RenunganController::class,'store'])->name('renungan.add');
 
     Route::post("/admin/addevent", [EventController::class, 'store'])->name('event.add');
+    Route::get('/admin/event',[EventController::class, 'show'])->name('event.show');    
+    Route::put('/admin/event/edit/{id}', [EventController::class, 'edit'])->name('event.edit');
+    Route::delete('/admin/event/delete/{id}', [EventController::class, 'destroy'])->name('event.delete');
+    Route::put('/admin/event/update/{id}', [EventController::class, 'update'])->name('event.update');
     
     
 });

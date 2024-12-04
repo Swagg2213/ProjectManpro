@@ -41,7 +41,7 @@
                     <li><a href="/dataJemaat" class="rounded-md hover:bg-[#113257]">Data Jemaat</a></li>
                     <li><a href="/pernikahan/admin" class="rounded-md hover:bg-[#113257]">Pernikahan</a></li>
                     <li><a href="/kematian/show" class="rounded-md hover:bg-[#113257]">Kematian</a></li>
-                    <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]">Event</a></li>
+                    <li><a href="/admin/addevent" class="rounded-md hover:bg-[#113257]">Event</a></li>
                     <li><a href="/admin/renungan" class="rounded-md hover:bg-[#113257]">Renungan</a></li>
                     @if (Auth::user())
                     <form method="POST" action="{{ route('logout') }}">
@@ -65,7 +65,7 @@
                     <li><a href="/jemaat" class="rounded-md hover:bg-[#113257]">Data Jemaat</a></li>
                     <li><a href="/pernikahan/admin" class="rounded-md hover:bg-[#113257]">Pernikahan</a></li>
                     <li><a href="/kematian/show" class="rounded-md hover:bg-[#113257]">Kematian</a></li>
-                    <li><a href="/event/admin" class="rounded-md hover:bg-[#113257]"> Add Event</a></li>
+                    <li><a href="/admin/event" class="rounded-md hover:bg-[#113257]"> Add Event</a></li>
                     <li><a href="/admin/renungan" class="rounded-md hover:bg-[#113257]">Renungan</a></li>
                     <li><a href="/registrasi" class="rounded-md hover:bg-[#113257]">Add Admin</a></li>
                     @if (Auth::user())

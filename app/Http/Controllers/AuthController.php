@@ -24,25 +24,20 @@ class AuthController extends Controller
             "username"=>"required",
             "password"=>"required",
         ]);
+        // dd($request->input('password'));
+        // dd($request->input('username'));
 
         $credentials = $request->only("username", "password");
+        // dd($credentials);
 
-        $user = User::where('username', $credentials['username'])->first();
+        
+        // dd($user);
 
         if(Auth::attempt($credentials)){
             
             $request->session()->regenerate();
-            return redirect()->intended(route("admin.index"));
+            return redirect()->intended(route(" index"));
         }
         return back()->with('loginError', 'login failed!');
-    }
-
-    function logout(Request $request){
-        Auth::guard('web')->logout();
-
-        $request->session()->invalidate();
-
-        $request->session()->regenerateToken();
-        return redirect('/');
     }
 }

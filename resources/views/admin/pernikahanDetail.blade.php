@@ -34,7 +34,7 @@
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Nomor HP</span>
                 <span class="mx-2">:</span>
-                <span id="noHpP" class="text-gray-700">{{$wedding->noHpP}}</span>
+                <span id="noHpP" class="text-gray-700">+62{{$wedding->noHpP}}</span>
             </div>
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Tempat Lahir</span>
@@ -77,7 +77,7 @@
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Nomor HP</span>
                 <span class="mx-2">:</span>
-                <span id="noHpL" class="text-gray-700">{{$wedding->noHpL}}</span>
+                <span id="noHpL" class="text-gray-700">+62{{$wedding->noHpL}}</span>
             </div>
             <div class="flex mb-2">
                 <span class="font-semibold w-1/2 text-left">Tempat Lahir</span>

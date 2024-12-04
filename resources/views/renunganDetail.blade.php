@@ -15,6 +15,8 @@
         <p class="pt-12 text-2xl font-medium text-left"><span class="font-semibold">Bacaan: </span>{{ $renungan->ayat }}</p>
         <div class="paragraf text-justify pt-2 pb-8">
             {{ $renungan->isiRenungan }}
+            <br>
+            {{ $renungan->isiRenungan2 }}
         </div>
     </div>
 </div>

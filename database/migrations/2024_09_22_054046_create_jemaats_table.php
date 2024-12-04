@@ -16,7 +16,7 @@ return new class extends Migration
             $table->text('nama');
             $table->text('jenisKelamin');
             $table->text('alamat');
-            $table->integer('noHp');
+            $table->bigInteger('noHp');
             $table->text('tempatLahir');
             $table->date('tanggalLahir');
             $table->timestamps();

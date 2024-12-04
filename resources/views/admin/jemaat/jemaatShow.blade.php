@@ -46,7 +46,7 @@
                         <td class="border px-6 py-4">{{ $jemaat->nama}}</td>
                         <td class="border px-6 py-4">{{ $jemaat->jenisKelamin}}</td>
                         <td class="border px-6 py-4">{{ $jemaat->alamat}}</td>
-                        <td class="border px-6 py-4">{{ $jemaat->noHp}}</td>
+                        <td class="border px-6 py-4">+62 {{ $jemaat->noHp}}</td>
                         <td class="border px-6 py-4">{{ $jemaat->tempatLahir}}</td>
                         <td class="border px-6 py-4">{{ date('d F Y', strtotime($jemaat->tanggalLahir)) }}</td>
                         <td class="border px-6 py-4">

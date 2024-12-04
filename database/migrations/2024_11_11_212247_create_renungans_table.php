@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('judul');
             $table->string('ayat');
-            $table->string('isiRenungan');
+            $table->text('isiRenungan');
+            $table->text('isiRenungan2');
             $table->string('pembuat');
             $table->date('tanggal');
             $table->string('poster');

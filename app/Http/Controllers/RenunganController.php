@@ -34,6 +34,7 @@ class RenunganController extends Controller
             'ayat'=>'required',
             'judul'=>'required',
             'isiRenungan'=>'required',
+            'isiRenungan2'=>'required',
             'pembuat'=>'required',
             'poster'=>'required|image',
             'tanggal'=>'required'

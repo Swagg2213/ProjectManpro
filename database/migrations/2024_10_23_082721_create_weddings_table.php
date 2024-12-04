@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->text('namaP');
             $table->text('alamatP');
-            $table->integer('noHpP');
+            $table->bigInteger('noHpP');
             $table->text('tempatLahirP');
             $table->date('tanggalLahirP');
             $table->text('gerejaP');
@@ -23,14 +23,13 @@ return new class extends Migration
             
             $table->text('namaL');
             $table->text('alamatL');
-            $table->integer('noHpL');
+            $table->bigInteger('noHpL');
             $table->text('tempatLahirL');
             $table->date('tanggalLahirL');
             $table->text('gerejaL');
             $table->boolean('menikahL');
 
             $table->date('tanggalPernikahan');
-            $table->boolean('allow');
             $table->timestamps();
         });
     }
